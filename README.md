@@ -43,7 +43,7 @@ La familia que usamos para este estudio la podemos ver el archivo [list.txt](lis
 ## Preparación de datos
 ### [Descargar genomas](/raw_data/)
 
-Los archivos `.fna` de cada una de la sepas fueron descargado de NCBI usando el ambiendo de conda `ncbi-genome-download` y fueron almacenados en la carpeta [raw_data](/raw_data/).
+Los archivos `.fna` de cada una de la sepas fueron descargado de NCBI usando el ambiendo de conda `ncbi-genome-download` y fueron almacenados en la carpeta [raw_data](https://github.com/shadayguerrero/Roseibaca/tree/main/raw_data).
 
 ### [Anotación funcional](/functional_annotation/) 
 La anotación funcional fue realizada con con **Prokka 1.14.6** y los detalles para cada una de las sepas estan [functional_annotation](/functional_annotation/).
