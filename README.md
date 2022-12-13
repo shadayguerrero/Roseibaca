@@ -84,6 +84,36 @@ Para identificar que grupos de BGC se estan formando y en cuales esta presente *
 Una exploracion grafica de los resultados de **BiG-SCAPE** los podemos ver en [bigscpae/output/index.html](/bigscape/output/index.html).
 
 ### Terpene
-### 
+Tenemos el siguiente tabla de presencia y ausencia de los genomas que tienen el BGC que produce **Terpene**.
 
+ <img src="svg/presence_terpene.png" width="1000"/>
+ 
+ 
+En dicha tabla podemos notar la famila **FAM_00127** que incluye a nuestro genoma de interes *Roseibaca_sp.V10*.
+
+
+FAM_00127
+1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.region001
+2. GCF_023336755.1_Roseibaca_sp.V10_V10-c00001_NZ_JALZ...region001
+3. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000012.region001
+
+
+<img src="svg/FAM_00127.svg" width="1200"/>
+
+
+### RiPPs
+Tenemos el siguiente tabla de presencia y ausencia de los genomas que tienen el BGC que produce **RiPPs**.
+
+ <img src="svg/presence_RiPPs.png" width="1000"/>
+ 
+ 
+En dicha tabla podemos notar la famila **FAM_00132** que incluye a nuestro genoma de interes *Roseibaca_sp.V10*.
+
+
+FAM_00132
+1. GCF_023336755.1_Roseibaca_sp.V10_V10-c00009_NZ_JALZ...region001
+2. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000019.region001
+
+
+<img src="svg/FAM_00132.svg" width="1200"/>
 
