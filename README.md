@@ -76,11 +76,14 @@ done
 Para la busqueda de los BGCs usamos **antiSMASH 6.0.0** y los resultados fueron almacenados en la carpeta [antismash](/antismash/). Además, usamos el script [change-names.sh](/antismash/change-names.sh), que añade en el nombre los detalles cepa a cada una de las regiones encontradas con antiSMASH.
 
 
-Encontramos 7 BGC para *Roseivaca V10*, como podemos observar en la salida de [antismash](/antismash/GCF_023336755.1_Roseibaca_sp.V10_V10/index.html), falta ver como se relacionan con los otros cluster en los diversos genomas.
+Encontramos 7 BGC para *Roseibaca V10*, como podemos observar en la salida de [antismash](/antismash/GCF_023336755.1_Roseibaca_sp.V10_V10/index.html), falta ver como se relacionan con los otros cluster en los diversos genomas.
 
-## [Redes de similitud de BGC] (/bigscape/)
+## [Redes de similitud de BGC](/bigscape/)
 Para identificar que grupos de BGC se estan formando y en cuales esta presente *Roseibaca sp.V10* utilizamos **BiG-SCAPE 1.1.2**, los resultados los econtramos en la siguiente carpeta [bigscpae/output](/bigscape/output).
 
-Una exploracion grafica de los resultados de **BiG-SCAPE** los podemos ver en [bigscpae/output](/bigscape/output/index.html)
+Una exploracion grafica de los resultados de **BiG-SCAPE** los podemos ver en [bigscpae/output](/bigscape/output/index.html).
+
+### Terpene
+### 
 
 
