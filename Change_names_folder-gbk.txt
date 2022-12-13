@@ -1,0 +1,9 @@
+cat list.txt | while read line
+do 
+id2=$(echo $line |cut -d " " -f1,2,3,4,5 | tr " \t" "_")
+id=$(echo $line |cut -d " " -f1)
+echo $id.prokka
+echo $id2
+mv $id.prokka.gbk $id2.gbk
+
+done
