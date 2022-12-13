@@ -81,7 +81,7 @@ Encontramos 7 BGC para *Roseibaca V10*, como podemos observar en la salida de [a
 ## [Redes de similitud de BGC](/bigscape/)
 Para identificar que grupos de BGC se estan formando y en cuales esta presente *Roseibaca sp.V10* utilizamos **BiG-SCAPE 1.1.2**, los resultados los econtramos en la siguiente carpeta [bigscpae/output](/bigscape/output).
 
-Una exploracion grafica de los resultados de **BiG-SCAPE** los podemos ver en [bigscpae/output](/bigscape/output/index.html).
+Una exploracion grafica de los resultados de **BiG-SCAPE** los podemos ver en [bigscpae/output/index.html](/bigscape/output/index.html).
 
 ### Terpene
 ### 
