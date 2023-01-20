@@ -11,7 +11,7 @@ La familia que usamos para este estudio la podemos ver el archivo [list.txt](lis
 | GCF_900499075.1   	| _Roseibaca ekhonensis_                   	| CECT 7235  	|
 | GCF_001870675.1   	| _Roseinatronobacter thiooxidans_         	| ALG1       	|
 | GCF_006716865.1   	| _Roseinatronobacter monicus_             	| DSM 18423  	|
-| GCF_004366635.1   	| _Rhodobaca bogoriensis DSM 18756_        	| DSM 18756  	|
+| GCF_004366635.1   	| _Rhodobaca bogoriensis _                	| DSM 18756  	|
 | GCF_001870665.2   	| _Rhodobaca barguzinensis_                	| alga05     	|
 | GCF_014681765.1   	| _Roseicitreum antarcticum_               	| ZS2-28     	|
 | GCF_003076755.1   	| _Pararhodobacter oceanensis_             	| AM505      	|
@@ -23,20 +23,20 @@ La familia que usamos para este estudio la podemos ver el archivo [list.txt](lis
 | GCF_000740775.1   	| _Haematobacter missouriensis_            	| CCUG 52307 	|
 | GCF_003254295.1   	| _Rhodobacter capsulatus_                 	| DSM 1710   	|
 | GCF_000740785.1   	| _Paenirhodobacter enshiensis_            	| DW2-9      	|
-| GCF_000714535.1   	| _Thioclava pacifica DSM 10166_           	| DSM 10166  	|
-| GCF_003034995.1   	| _Phaeovulum veldkampii DSM 11550_        	| DSM 11550  	|
+| GCF_000714535.1   	| _Thioclava pacifica_                     	| DSM 10166  	|
+| GCF_003034995.1   	| _Phaeovulum veldkampii_                 	| DSM 11550  	|
 | GCF_900100045.1   	| _Paracoccus denitrificans_               	| DSM 413    	|
 | GCF_009908165.1   	| _Frigidibacter albus_                    	| SP32       	|
 | GCF_002927635.1   	| _Albidovulum inexpectatum_               	| DSM 12048  	|
-| GCF_003034965.1   	| _Fuscovulum blasticum DSM 2131_          	| DSM 2131   	|
+| GCF_003034965.1   	| _Fuscovulum blasticum_                   	| DSM 2131   	|
 | GCF_003290025.1   	| _Pseudogemmobacter bohemicus_            	| Cd-10      	|
 | GCF_002900975.1   	| _Tabrizicola aquatica_                   	| RCRI19     	|
 | GCF_001294535.1   	| _Cypionkella psychrotolerans_            	| PAMC 27389 	|
 | GCF_900110025.1   	| _Gemmobacter aquatilis_                  	| DSM 3857   	|
-| GCF_000420745.1   	| _Pseudorhodobacter ferrugineus DSM 5888_ 	| DSM 5888   	|
-| GCF_003034985.1   	| _Cereibacter changlensis JA139_          	| JA139      	|
+| GCF_000420745.1   	| _Pseudorhodobacter ferrugineus_          	| DSM 5888   	|
+| GCF_003034985.1   	| _Cereibacter changlensis _              	| JA139      	|
 | GCF_004015795.1   	| _Falsirhodobacter deserti_               	| W402       	|
-| GCF_000429765.1   	| _Gemmobacter nectariphilus DSM 15620_    	| DSM 15620  	|
+| GCF_000429765.1   	| _Gemmobacter nectariphilus _             	| DSM 15620  	|
 | GCF_002871005.1   	| _Acidimangrovimonas sediminis_           	| MS2-2      	|
 | GCF_004010155.1   	| _Solirhodobacter olei_                   	| Pet-1      	|
 
@@ -117,3 +117,4 @@ FAM_00132
 
 <img src="svg/FAM_00132.svg" width="1200"/>
 
+## [CORASON](corason/svg/) 
