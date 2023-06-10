@@ -213,4 +213,5 @@ We use this query [BMJDCPAI_03118](corason/query/t1pks_2.BMJDCPAI_03118.query)
 
 
 
-We use this query [BMJDCPAI_03119](corason/query/t1pks_BMJDCPAI_03119)
+And other query [BMJDCPAI_03119](corason/query/t1pks_BMJDCPAI_03119)
+<img src="corason/svg/t1pks_BMJDCPAI_03119.query_Joined.svg" width="1000"/>
