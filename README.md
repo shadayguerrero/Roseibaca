@@ -207,6 +207,10 @@ To investigate the presence of NRPST1PKS biosynthetic gene clusters in Roseibaca
 
 To investigate the presence of T1PKS biosynthetic gene clusters in Roseibaca V10, we can perform a specific analysis using the corresponding gene sequence from Roseibaca V10 as the query. This analysis will provide more accurate information about the potential biosynthetic capabilities of Roseibaca V10 in producing type I polyketides.
 
+We use this query [BMJDCPAI_03118](corason/query/t1pks_2.BMJDCPAI_03118.query)
+
 <img src="corason/svg/t1pks_2.BMJDCPAI_03118.query_Joined.svg" width="1000"/>
 
-<img src="corason/svg/NRPST1PKS_BMJDCPAI_00764.query_Joined.svg" width="1000"/>
+
+
+We use this query [BMJDCPAI_03119](corason/query/t1pks_BMJDCPAI_03119)
