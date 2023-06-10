@@ -166,5 +166,5 @@ The analysis with [BMJDCPAI_02120](https://github.com/shadayguerrero/Roseibaca/b
 
 Further details and a comprehensive analysis of the gene family can be found in the RRE output files.
 
-<img src="corason/svg/RRE_BMJDCPAI_02120.query_Joined " width="1000"/>
+<img src="corason/svg/RRE_BMJDCPAI_02120.query_Joined.svg" width="1000"/>
 
