@@ -140,7 +140,7 @@ The output and results of the CORASON analysis can be found in the corresponding
 
 ### **Ectoine**
 
-For ectoine, we used the gene  [BMJDCPAI_00849](https://github.com/shadayguerrero/Roseibaca/blob/main/corason/query/ectoine_BMJDCPAI_00849.query) as the query, and here are the results:
+For ectoine, we used the gene  [BMJDCPAI_00849](/corason/query/ectoine_BMJDCPAI_00849.query) as the query, and here are the results:
 
 The CORASON analysis with the gene BMJDCPAI_00849 as the query identified several clusters in different genomes that share similarity with the ectoine biosynthetic pathway. These clusters may contain genes involved in the synthesis of ectoine or related compounds.
 
@@ -162,9 +162,51 @@ These clusters indicate the presence of a conserved set of genes associated with
 
 In addition, using RRE (Rapid Response Engine), we analyzed the gene BMJDCPAI_02120 as the target gene and identified a gene family that includes Roseibaca_v10.
 
-The analysis with [BMJDCPAI_02120](https://github.com/shadayguerrero/Roseibaca/blob/main/corason/query/ectoine_BMJDCPAI_02120.query) revealed a gene family that is shared with _Roseibaca_ekhonensis_. This gene family may be associated with a specific biological function or metabolic pathway.
+The analysis with [BMJDCPAI_02120](corason/query/ectoine_BMJDCPAI_02120.query) revealed a gene family that is shared with _Roseibaca_ekhonensis_. This gene family may be associated with a specific biological function or metabolic pathway.
 
 Further details and a comprehensive analysis of the gene family can be found in the RRE output files.
 
 <img src="corason/svg/RRE_BMJDCPAI_02120.query_Joined.svg" width="1000"/>
 
+
+
+### **T3PKS**
+Additionally, we performed an analysis using T3pks (Type III Polyketide Synthase) with the query gene [BMJDCPAI_00537](corason/query/t3pks_BMJDCPAI_00537.query). The results show the presence of a T3pks gene family that includes Roseibaca_ekhonensis.
+
+Further examination of the T3pks gene family and its associated metabolic pathways can be explored in the output files generated from the analysis.
+
+<img src="corason/svg/t3pks_BMJDCPAI_00537.query_Joined.svg" width="1000"/>
+
+### **Terpene**
+
+In the Terpene analysis using the query gene  [BMJDCPAI_00103](corason/query/terpene_BMJDCPAI_00103.query)., we identified a gene family associated with Terpene biosynthesis. This gene family includes Roseibaca_ekhonensis, indicating the potential involvement of this organism in Terpene production.
+
+The presence of the Terpene biosynthetic gene in Roseibaca_ekhonensis suggests its capability to produce Terpene compounds. Further investigation into the specific Terpene biosynthetic pathways and the functional characteristics of the gene family can be explored using the output files generated from the analysis.
+
+<img src="corason/svg/terpene_BMJDCPAI_00103.query_Joined.svg" width="1000"/>
+
+### **RiPP**
+
+In the RiPP analysis using the query gene BMJDCPAI_01909 [BMJDCPAI_01909 ](corason/query/RiPP_BMJDCPAI_01909.query), we identified a gene family associated with RiPP biosynthesis. This gene family includes Roseibaca_ekhonensis, indicating its potential involvement in RiPP production.
+
+The presence of the RiPP biosynthetic gene in Roseibaca_ekhonensis suggests that this organism has the capability to produce RiPP compounds. Further exploration of the specific RiPP biosynthetic pathways and the functional characteristics of the gene family can be conducted using the output files generated from the analysis.
+
+<img src="corason/svg/RiPP_BMJDCPAI_01909.query_Joined.svg" width="1000"/>
+
+
+### **NRPST1PKS**
+
+In the analysis using the NRPST1PKS query gene [BMJDCPAI_00764 ](corason/query/NRPST1PKS_BMJDCPAI_00764.query), we identified a gene family associated with nonribosomal peptide synthetase (NRP) and type I polyketide synthase (PKS) biosynthesis. Although Roseibaca_ekhonensis was part of this gene family, it's important to note that our main focus is Roseibaca V10.
+
+To investigate the presence of NRPST1PKS biosynthetic gene clusters in Roseibaca V10, we can perform a specific analysis using the corresponding gene sequence from Roseibaca V10 as the query. This analysis will provide more accurate information about the potential biosynthetic capabilities of Roseibaca V10 in producing nonribosomal peptides and type I polyketides.
+
+<img src="corason/svg/NRPST1PKS_BMJDCPAI_00764.query_Joined.svg" width="1000"/>
+
+
+### **T1PKS**
+
+To investigate the presence of T1PKS biosynthetic gene clusters in Roseibaca V10, we can perform a specific analysis using the corresponding gene sequence from Roseibaca V10 as the query. This analysis will provide more accurate information about the potential biosynthetic capabilities of Roseibaca V10 in producing type I polyketides.
+
+<img src="corason/svg/t1pks_2.BMJDCPAI_03118.query_Joined.svg" width="1000"/>
+
+<img src="corason/svg/NRPST1PKS_BMJDCPAI_00764.query_Joined.svg" width="1000"/>
