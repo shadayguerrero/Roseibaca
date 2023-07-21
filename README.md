@@ -85,7 +85,7 @@ We used **antiSMASH 7.0.0** to search for BGCs, and the results were stored in t
 We found 6 BGCs for *Roseibaca* V10, as can be seen in the output of [antismash](/antismash7/GCF_023336755.1_Roseibaca_sp.V10_V10/index.html). The relationship of these clusters with other clusters in different genomes still needs to be investigated.
 
 
-## [BGC Similarity Networks]https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos)
+## [BGC Similarity Networks](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos)
 To identify the groups of BGCs that are forming and to determine in which groups Roseibaca sp.V10 is present, we used **BiG-SCAPE 1.1.2**. The results can be found in the [bigscpae_nuevos/output_210723_4](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos/output_210723_4) folder.
 
 A graphical exploration of the **BiG-SCAPE** results can be seen at [bigscpae_nuevos/output_210723_4/index.html](/bigscape_nuevos/output_210723_4/index.html).
