@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="350" onload="Init(evt)" onmousemove=" GetTrueCoords(evt); 
+			ShowTooltip(evt, true)" onmouseout="ShowTooltip(evt, false)" width="1200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<script />
+<defs><style type='text/css'><![CDATA[
+ .leaf-label {font-size:medium;font-family:sans}
+ .inner-label {font-size:small;font-family:sans}
+ .edge-label {opacity:0}
+]]></style></defs>
+<!-- arguments: -b opacity:0 -v 40 -s -  -->
+<g transform='translate(0,20)'><g  style='stroke:black;fill:none;stroke-width:1;stroke-linecap:round'><line class='clade_0' x1='10.0000' y1='0.0000' x2='290.0000' y2='0.0000'/><line class='clade_0' x1='10.0000' y1='40.0000' x2='35.3574' y2='40.0000'/><line class='clade_0' x1='28.1175' y1='80.0000' x2='73.1462' y2='80.0000'/><line class='clade_0' x1='28.1175' y1='120.0000' x2='82.3530' y2='120.0000'/><line class='clade_0' x1='28.1175' y1='80.0000' x2='28.1175' y2='120.0000'/><line class='clade_0' x1='10.0000' y1='100.0000' x2='28.1175' y2='100.0000'/><line class='clade_0' x1='10.0000' y1='0.0000' x2='10.0000' y2='100.0000'/><line x1='0' y1='50.0000' x2='10.0000' y2='50.0000'/></g><g style='stroke:none'><text class='edge-label' x='150.000000' y='-4.000000'>0.546833125</text><text class='edge-label' x='22.678716' y='36.000000'>0.049522441</text><text class='edge-label' x='50.631873' y='76.000000'>0.087939862</text><text class='edge-label' x='55.235294' y='116.000000'>0.105920600</text><text class='edge-label' x='19.058772' y='96.000000'>0.035383119</text></g><g transform='translate(10,170)' style='stroke:black;stroke-width:1' ><path d='M 0 0 h 280'/><path d='M 0 0 v -7'/><text style='stroke:none;text-anchor:end' x='2' y='-9'>0</text><path d='M 51.2039 0 v -7'/><text style='stroke:none;text-anchor:end' x='53.2039' y='-9'>0.1</text><path d='M 102.408 0 v -7'/><text style='stroke:none;text-anchor:end' x='104.408' y='-9'>0.2</text><path d='M 153.612 0 v -7'/><text style='stroke:none;text-anchor:end' x='155.612' y='-9'>0.3</text><path d='M 204.816 0 v -7'/><text style='stroke:none;text-anchor:end' x='206.816' y='-9'>0.4</text><path d='M 256.02 0 v -7'/><text style='stroke:none;text-anchor:end' x='258.02' y='-9'>0.5</text><text style='font-size:small;stroke:none' x='0' y='-20'>substitutions/site</text></g></g>
+
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="110,300 110,250 150,250 150,300 " style="fill: rgb(254,30,30); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>100</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="160,300 160,262.5 200,262.5 200,300 " style="fill: rgb(187,230,210); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="210,300 210,262.5 250,262.5 250,300 " style="fill: rgb(125,103,205); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="260,300 260,262.5 300,262.5 300,300 " style="fill: rgb(253,200,233); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="310,300 310,262.5 350,262.5 350,300 " style="fill: rgb(66,209,94); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="360,300 360,250 400,250 400,300 " style="fill: rgb(41,106,249); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>100</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="410,300 410,287.5 450,287.5 450,300 " style="fill: rgb(61,138,50); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>25</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="460,300 460,275 500,275 500,300 " style="fill: rgb(28,111,118); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>50</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="510,300 510,262.5 550,262.5 550,300 " style="fill: rgb(127,220,49); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="560,300 560,262.5 600,262.5 600,300 " style="fill: rgb(72,226,20); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="610,300 610,262.5 650,262.5 650,300 " style="fill: rgb(38,205,65); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="660,300 660,275 700,275 700,300 " style="fill: rgb(142,145,71); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>50</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="710,300 710,262.5 750,262.5 750,300 " style="fill: rgb(153,226,231); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="760,300 760,262.5 800,262.5 800,300 " style="fill: rgb(124,152,88); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="810,300 810,287.5 850,287.5 850,300 " style="fill: rgb(214,184,86); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>25</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="860,300 860,262.5 900,262.5 900,300 " style="fill: rgb(50,137,73); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="910,300 910,262.5 950,262.5 950,300 " style="fill: rgb(23,124,152); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="960,300 960,262.5 1000,262.5 1000,300 " style="fill: rgb(139,213,133); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="1010,300 1010,262.5 1050,262.5 1050,300 " style="fill: rgb(143,114,31); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polygon points="1060,300 1060,262.5 1100,262.5 1100,300 " style="fill: rgb(171,101,36); stroke: steelblue; stroke-opacity: 1; stroke-width: 2" >
+<title>75</title></polygon>
+	<polyline points="95,250 105,250 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,300 105,300 " style="stroke: rgb(250,123,23)" />
+	<polyline points="95,275 105,275 " style="stroke: rgb(250,123,23)" />
+	<polyline points="100,300 100,225 100,250 " style="stroke: rgb(250,123,23)" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="300">0%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="250">100%</text>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: start" x="50" y="275">50%</text>
+	<text style="font-family: Arial; font-size: 5; font-style: italic" x="100" y="320">Percentage of BGCs that contains this gene family</text>
+	<polyline points="100,21 900,21 " style="fill-opacity: 0; stroke: rgb(250,123,23); stroke-dasharray: 5,5; stroke-opacity: 0.5" />
+	<polyline points="100,61 900,61 " style="fill-opacity: 0; stroke: rgb(250,123,23); stroke-dasharray: 5,5; stroke-opacity: 0.5" />
+	<polyline points="100,101 900,101 " style="fill-opacity: 0; stroke: rgb(250,123,23); stroke-dasharray: 5,5; stroke-opacity: 0.5" />
+	<polyline points="100,141 900,141 " style="fill-opacity: 0; stroke: rgb(250,123,23); stroke-dasharray: 5,5; stroke-opacity: 0.5" />
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: middle" x="600" y="14">100011_1112 GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk </text>
+	<polygon points="425,16 425,26 425,26 430,21 425,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:28077 28619
+Direction:+ Gen Id:fig|666666.100011.peg.1102 Function L-threonine 3-dehydrogenase smash:none</title></polygon>
+	<polygon points="438,16 438,26 436,26 431,21 436,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:29503 28745
+Direction:- Gen Id:fig|666666.100011.peg.1103 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="439,16 439,26 443,26 448,21 443,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:29600 30511
+Direction:+ Gen Id:fig|666666.100011.peg.1104 Function IS5 family transposase IS4811 smash:none</title></polygon>
+	<polygon points="451,16 451,26 451,26 456,21 451,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:30914 31462
+Direction:+ Gen Id:fig|666666.100011.peg.1105 Function ECF RNA polymerase sigma factor SigK smash:none</title></polygon>
+	<polygon points="456,16 456,26 458,26 463,21 458,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:31459 32142
+Direction:+ Gen Id:fig|666666.100011.peg.1106 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="464,16 464,26 464,26 469,21 464,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:32267 32818
+Direction:+ Gen Id:fig|666666.100011.peg.1107 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="470,16 470,26 473,26 478,21 473,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:32909 33724
+Direction:+ Gen Id:fig|666666.100011.peg.1108 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="478,16 478,26 480,26 485,21 480,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:33725 34501
+Direction:+ Gen Id:fig|666666.100011.peg.1109 Function Putative protein-methionine-sulfoxide reductase subunit YedZ1 smash:none</title></polygon>
+	<polygon points="485,16 485,26 485,16 488,21 485,26 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:34479 34856
+Direction:+ Gen Id:fig|666666.100011.peg.1110 Function Inner membrane protein YqjF smash:none</title></polygon>
+	<polygon points="489,16 489,26 495,26 500,21 495,16 " style="fill: rgb(41,106,249); fill-opacity: 0.5977; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.5977 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:34966 36036
+Direction:+ Gen Id:fig|666666.100011.peg.1111 Function 1,3,6,8-tetrahydroxynaphthalene synthase smash:none</title></polygon>
+	<polygon points="500,16 500,26 500,16 504,21 500,26 " style="fill: rgb(254,30,30); fill-opacity: 0.63522; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.63522 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:36033 36542
+Direction:+ Gen Id:fig|666666.100011.peg.1112 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="519,16 519,26 511,26 506,21 511,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:38077 36770
+Direction:- Gen Id:fig|666666.100011.peg.1113 Function C4-dicarboxylate TRAP transporter large permease protein DctM smash:none</title></polygon>
+	<polygon points="523,16 523,26 523,16 519,21 523,26 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:38568 38074
+Direction:- Gen Id:fig|666666.100011.peg.1114 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="533,16 533,26 529,26 524,21 529,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:39570 38584
+Direction:- Gen Id:fig|666666.100011.peg.1115 Function Solute-binding protein smash:none</title></polygon>
+	<polygon points="544,16 544,26 541,26 536,21 541,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:40767 39964
+Direction:- Gen Id:fig|666666.100011.peg.1116 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="553,16 553,26 550,26 545,21 550,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:41700 40837
+Direction:- Gen Id:fig|666666.100011.peg.1117 Function Melibiose/raffinose/stachyose import permease protein MelD smash:none</title></polygon>
+	<polygon points="566,16 566,26 559,26 554,21 559,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:43071 41800
+Direction:- Gen Id:fig|666666.100011.peg.1118 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="574,16 574,26 571,26 566,21 571,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:43916 43116
+Direction:- Gen Id:fig|666666.100011.peg.1119 Function Trehalose transport system permease protein SugB smash:none</title></polygon>
+	<polygon points="584,16 584,26 579,26 574,21 579,16 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:45019 43919
+Direction:- Gen Id:fig|666666.100011.peg.1120 Function Oligosaccharides import ATP-binding protein MsmX smash:none</title></polygon>
+	<polygon points="592,16 592,26 590,26 585,21 590,16 " style="fill: rgb(143,114,31); fill-opacity: 0.29502; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.29502 Organism:GCF_002871005.1_Acidimangrovimonas_sediminis_MS2-2.gbk  Coordinates:45886 45086
+Direction:- Gen Id:fig|666666.100011.peg.1121 Function 3-oxoacyl-[acyl-carrier-protein] reductase FabG smash:none</title></polygon>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: middle" x="600" y="54">100033_528 GCF_023336755.1_Roseibaca_sp.V10_V10.gbk </text>
+	<polygon points="375,56 375,66 384,66 389,61 384,56 " style="fill: rgb(61,138,50); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:112173 113705
+Direction:+ Gen Id:fig|666666.100033.peg.518 Function Galactose/methyl galactoside import ATP-binding protein MglA smash:none</title></polygon>
+	<polygon points="389,56 389,66 394,66 399,61 394,56 " style="fill: rgb(72,226,20); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:113702 114787
+Direction:+ Gen Id:fig|666666.100033.peg.519 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="399,56 399,66 403,66 408,61 403,56 " style="fill: rgb(38,205,65); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:114784 115716
+Direction:+ Gen Id:fig|666666.100033.peg.520 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="408,56 408,66 414,66 419,61 414,56 " style="fill: rgb(253,200,233); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:115753 116829
+Direction:+ Gen Id:fig|666666.100033.peg.521 Function Purine-binding protein smash:none</title></polygon>
+	<polygon points="419,56 419,66 420,66 425,61 420,56 " style="fill: rgb(23,124,152); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:116927 117523
+Direction:+ Gen Id:fig|666666.100033.peg.522 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="436,56 436,66 430,66 425,61 430,56 " style="fill: rgb(125,103,205); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:118677 117520
+Direction:- Gen Id:fig|666666.100033.peg.523 Function Chaperone protein DnaJ smash:none</title></polygon>
+	<polygon points="455,56 455,66 442,66 437,61 442,56 " style="fill: rgb(127,220,49); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:120662 118749
+Direction:- Gen Id:fig|666666.100033.peg.524 Function Chaperone protein DnaK smash:none</title></polygon>
+	<polygon points="475,56 475,66 461,66 456,61 461,56 " style="fill: rgb(139,213,133); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:122837 120831
+Direction:- Gen Id:fig|666666.100033.peg.525 Function Dipeptidyl carboxypeptidase smash:none</title></polygon>
+	<polygon points="488,56 488,66 481,66 476,61 481,56 " style="fill: rgb(66,209,94); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:124199 122904
+Direction:- Gen Id:fig|666666.100033.peg.526 Function putative MFS-type transporter YcaD smash:none</title></polygon>
+	<polygon points="490,56 490,66 495,66 500,61 495,56 " style="fill: rgb(41,106,249); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:124396 125436
+Direction:+ Gen Id:fig|666666.100033.peg.527 Function 1,3,6,8-tetrahydroxynaphthalene synthase smash:none</title></polygon>
+	<polygon points="500,56 500,66 500,56 504,61 500,66 " style="fill: rgb(254,30,30); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:125433 125921
+Direction:+ Gen Id:fig|666666.100033.peg.528 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="505,56 505,66 508,66 513,61 508,56 " style="fill: rgb(187,230,210); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:125992 126885
+Direction:+ Gen Id:fig|666666.100033.peg.529 Function UDP-glucose 4-epimerase smash:none</title></polygon>
+	<polygon points="537,56 537,66 518,66 513,61 518,56 " style="fill: rgb(124,152,88); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:129375 126889
+Direction:- Gen Id:fig|666666.100033.peg.530 Function 4-methylaminobutanoate oxidase (formaldehyde-forming) smash:none</title></polygon>
+	<polygon points="542,56 542,66 542,56 538,61 542,66 " style="fill: rgb(153,226,231); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:129967 129506
+Direction:- Gen Id:fig|666666.100033.peg.531 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="543,56 543,66 546,66 551,61 546,56 " style="fill: rgb(171,101,36); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:130095 130940
+Direction:+ Gen Id:fig|666666.100033.peg.532 Function Pantothenate synthetase smash:none</title></polygon>
+	<polygon points="551,56 551,66 554,66 559,61 554,56 " style="fill: rgb(50,137,73); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:130937 131746
+Direction:+ Gen Id:fig|666666.100033.peg.533 Function 3-methyl-2-oxobutanoate hydroxymethyltransferase smash:none</title></polygon>
+	<polygon points="567,56 567,66 564,66 559,61 564,56 " style="fill: rgb(214,184,86); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:132564 131767
+Direction:- Gen Id:fig|666666.100033.peg.534 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="579,56 579,66 577,66 572,61 577,56 " style="fill: rgb(143,114,31); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:133922 133116
+Direction:- Gen Id:fig|666666.100033.peg.535 Function Dihydroanticapsin 7-dehydrogenase smash:none</title></polygon>
+	<polygon points="589,56 589,66 584,66 579,61 584,56 " style="fill: rgb(142,145,71); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:134941 133919
+Direction:- Gen Id:fig|666666.100033.peg.536 Function Ribosomal RNA small subunit methyltransferase C smash:none</title></polygon>
+	<polygon points="592,56 592,66 592,56 589,61 592,66 " style="fill: rgb(28,111,118); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_023336755.1_Roseibaca_sp.V10_V10.gbk  Coordinates:135286 134951
+Direction:- Gen Id:fig|666666.100033.peg.537 Function ATP-dependent Clp protease adapter protein ClpS smash:none</title></polygon>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: middle" x="600" y="94">100032_1398 GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk </text>
+	<polygon points="380,96 380,106 386,106 391,101 386,96 " style="fill: rgb(72,226,20); fill-opacity: 0.94737; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.94737 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:45004 46089
+Direction:+ Gen Id:fig|666666.100032.peg.1388 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="390,96 390,106 394,106 399,101 394,96 " style="fill: rgb(38,205,65); fill-opacity: 0.9871; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.9871 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:46086 47018
+Direction:+ Gen Id:fig|666666.100032.peg.1389 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="400,96 400,106 405,106 410,101 405,96 " style="fill: rgb(253,200,233); fill-opacity: 0.91916; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.91916 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:47057 48136
+Direction:+ Gen Id:fig|666666.100032.peg.1390 Function Purine-binding protein smash:none</title></polygon>
+	<polygon points="419,96 419,106 415,106 410,101 415,96 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:49103 48186
+Direction:- Gen Id:fig|666666.100032.peg.1391 Function putative NTE family protein smash:none</title></polygon>
+	<polygon points="420,96 420,106 420,106 425,101 420,96 " style="fill: rgb(23,124,152); fill-opacity: 0.89394; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.89394 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:49208 49801
+Direction:+ Gen Id:fig|666666.100032.peg.1392 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="436,96 436,106 430,106 425,101 430,96 " style="fill: rgb(125,103,205); fill-opacity: 0.92468; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.92468 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:50949 49798
+Direction:- Gen Id:fig|666666.100032.peg.1393 Function Chaperone protein DnaJ smash:none</title></polygon>
+	<polygon points="455,96 455,106 442,106 437,101 442,96 " style="fill: rgb(127,220,49); fill-opacity: 0.97335; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.97335 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:52938 51022
+Direction:- Gen Id:fig|666666.100032.peg.1394 Function Chaperone protein DnaK smash:none</title></polygon>
+	<polygon points="475,96 475,106 461,106 456,101 461,96 " style="fill: rgb(139,213,133); fill-opacity: 0.90569; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.90569 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:55103 53097
+Direction:- Gen Id:fig|666666.100032.peg.1395 Function Dipeptidyl carboxypeptidase smash:none</title></polygon>
+	<polygon points="488,96 488,106 481,106 476,101 481,96 " style="fill: rgb(66,209,94); fill-opacity: 0.84559; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.84559 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:56434 55160
+Direction:- Gen Id:fig|666666.100032.peg.1396 Function putative MFS-type transporter YcaD smash:none</title></polygon>
+	<polygon points="490,96 490,106 495,106 500,101 495,96 " style="fill: rgb(41,106,249); fill-opacity: 0.83478; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.83478 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:56631 57671
+Direction:+ Gen Id:fig|666666.100032.peg.1397 Function 1,3,6,8-tetrahydroxynaphthalene synthase smash:none</title></polygon>
+	<polygon points="500,96 500,106 500,96 504,101 500,106 " style="fill: rgb(254,30,30); fill-opacity: 0.91358; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.91358 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:57668 58156
+Direction:+ Gen Id:fig|666666.100032.peg.1398 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="504,96 504,106 508,106 513,101 508,96 " style="fill: rgb(187,230,210); fill-opacity: 0.89562; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.89562 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:58183 59076
+Direction:+ Gen Id:fig|666666.100032.peg.1399 Function UDP-glucose 4-epimerase smash:none</title></polygon>
+	<polygon points="536,96 536,106 518,106 513,101 518,96 " style="fill: rgb(124,152,88); fill-opacity: 0.94686; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.94686 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:61566 59080
+Direction:- Gen Id:fig|666666.100032.peg.1400 Function 4-methylaminobutanoate oxidase (formaldehyde-forming) smash:none</title></polygon>
+	<polygon points="542,96 542,106 542,106 537,101 542,96 " style="fill: rgb(153,226,231); fill-opacity: 0.79739; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.79739 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:62157 61693
+Direction:- Gen Id:fig|666666.100032.peg.1401 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="543,96 543,106 546,106 551,101 546,96 " style="fill: rgb(171,101,36); fill-opacity: 0.89643; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.89643 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:62291 63136
+Direction:+ Gen Id:fig|666666.100032.peg.1402 Function Pantothenate synthetase smash:none</title></polygon>
+	<polygon points="551,96 551,106 554,106 559,101 554,96 " style="fill: rgb(50,137,73); fill-opacity: 0.96654; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.96654 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:63133 63942
+Direction:+ Gen Id:fig|666666.100032.peg.1403 Function 3-methyl-2-oxobutanoate hydroxymethyltransferase smash:none</title></polygon>
+	<polygon points="567,96 567,106 564,106 559,101 564,96 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:64794 63961
+Direction:- Gen Id:fig|666666.100032.peg.1404 Function Bifunctional chorismate mutase/prephenate dehydratase smash:none</title></polygon>
+	<polygon points="568,96 568,106 568,96 572,101 568,106 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:64915 65421
+Direction:+ Gen Id:fig|666666.100032.peg.1405 Function Cytochrome c-552 smash:none</title></polygon>
+	<polygon points="574,96 574,106 587,106 592,101 587,96 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:65614 67512
+Direction:+ Gen Id:fig|666666.100032.peg.1406 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="592,96 592,106 597,106 602,101 597,96 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43.gbk  Coordinates:67516 68604
+Direction:+ Gen Id:fig|666666.100032.peg.1407 Function Inner membrane ABC transporter permease protein YejB smash:none</title></polygon>
+	<text style="font-family: Arial; font-size: 10; font-style: italic; text-anchor: middle" x="600" y="134">100037_1543 GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk </text>
+	<polygon points="590,136 590,146 590,136 587,141 590,146 " style="fill: rgb(28,111,118); fill-opacity: 0.97297; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.97297 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:72815 73150
+Direction:+ Gen Id:fig|666666.100037.peg.1533 Function ATP-dependent Clp protease adapter protein ClpS smash:none</title></polygon>
+	<polygon points="587,136 587,146 582,146 577,141 582,136 " style="fill: rgb(142,145,71); fill-opacity: 0.79412; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.79412 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:73160 74182
+Direction:+ Gen Id:fig|666666.100037.peg.1534 Function Ribosomal RNA small subunit methyltransferase C smash:none</title></polygon>
+	<polygon points="577,136 577,146 575,146 570,141 575,136 " style="fill: rgb(143,114,31); fill-opacity: 0.93309; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.93309 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:74179 74988
+Direction:+ Gen Id:fig|666666.100037.peg.1535 Function Dihydroanticapsin 7-dehydrogenase smash:none</title></polygon>
+	<polygon points="566,136 566,146 566,136 569,141 566,146 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:75398 75084
+Direction:- Gen Id:fig|666666.100037.peg.1536 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="558,136 558,146 561,146 566,141 561,136 " style="fill: rgb(50,137,73); fill-opacity: 0.9777; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.9777 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:76211 75402
+Direction:- Gen Id:fig|666666.100037.peg.1537 Function 3-methyl-2-oxobutanoate hydroxymethyltransferase smash:none</title></polygon>
+	<polygon points="550,136 550,146 553,146 558,141 553,136 " style="fill: rgb(171,101,36); fill-opacity: 0.88889; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.88889 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:77053 76214
+Direction:- Gen Id:fig|666666.100037.peg.1538 Function Pantothenate synthetase smash:none</title></polygon>
+	<polygon points="549,136 549,146 549,136 545,141 549,146 " style="fill: rgb(153,226,231); fill-opacity: 0.71895; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.71895 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:77182 77631
+Direction:+ Gen Id:fig|666666.100037.peg.1539 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="544,136 544,146 525,146 520,141 525,136 " style="fill: rgb(124,152,88); fill-opacity: 0.88715; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.88715 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:77761 80259
+Direction:+ Gen Id:fig|666666.100037.peg.1540 Function 4-methylaminobutanoate oxidase (formaldehyde-forming) smash:none</title></polygon>
+	<polygon points="512,136 512,146 515,146 520,141 515,136 " style="fill: rgb(187,230,210); fill-opacity: 0.91246; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.91246 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:81156 80263
+Direction:- Gen Id:fig|666666.100037.peg.1541 Function UDP-glucose 4-epimerase smash:none</title></polygon>
+	<polygon points="506,136 506,146 506,146 511,141 506,136 " style="fill: rgb(255,255,255); fill-opacity: 1; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:1 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:81708 81229
+Direction:- Gen Id:fig|666666.100037.peg.1542 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="500,136 500,146 500,146 505,141 500,136 " style="fill: rgb(254,30,30); fill-opacity: 0.89506; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.89506 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:82333 81845
+Direction:- Gen Id:fig|666666.100037.peg.1543 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="491,136 491,146 496,146 501,141 496,136 " style="fill: rgb(41,106,249); fill-opacity: 0.82659; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.82659 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:83370 82330
+Direction:- Gen Id:fig|666666.100037.peg.1544 Function 1,3,6,8-tetrahydroxynaphthalene synthase smash:none</title></polygon>
+	<polygon points="489,136 489,146 482,146 477,141 482,136 " style="fill: rgb(66,209,94); fill-opacity: 0.90355; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.90355 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:83576 84874
+Direction:+ Gen Id:fig|666666.100037.peg.1545 Function putative MFS-type transporter YcaD smash:none</title></polygon>
+	<polygon points="476,136 476,146 462,146 457,141 462,136 " style="fill: rgb(139,213,133); fill-opacity: 0.90868; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.90868 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:84953 86959
+Direction:+ Gen Id:fig|666666.100037.peg.1546 Function Dipeptidyl carboxypeptidase smash:none</title></polygon>
+	<polygon points="455,136 455,146 442,146 437,141 442,136 " style="fill: rgb(127,220,49); fill-opacity: 0.96238; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.96238 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:87127 89043
+Direction:+ Gen Id:fig|666666.100037.peg.1547 Function Chaperone protein DnaK smash:none</title></polygon>
+	<polygon points="437,136 437,146 431,146 426,141 431,136 " style="fill: rgb(125,103,205); fill-opacity: 0.96623; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.96623 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:89116 90273
+Direction:+ Gen Id:fig|666666.100037.peg.1548 Function Chaperone protein DnaJ smash:none</title></polygon>
+	<polygon points="420,136 420,146 421,146 426,141 421,136 " style="fill: rgb(23,124,152); fill-opacity: 0.89899; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.89899 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:90866 90270
+Direction:- Gen Id:fig|666666.100037.peg.1549 Function hypothetical protein smash:none</title></polygon>
+	<polygon points="409,136 409,146 414,146 419,141 414,136 " style="fill: rgb(253,200,233); fill-opacity: 0.95531; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.95531 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:92040 90964
+Direction:- Gen Id:fig|666666.100037.peg.1550 Function Purine-binding protein smash:none</title></polygon>
+	<polygon points="400,136 400,146 404,146 409,141 404,136 " style="fill: rgb(38,205,65); fill-opacity: 0.98387; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.98387 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:93008 92076
+Direction:- Gen Id:fig|666666.100037.peg.1551 Function putative riboflavin import permease protein RfuD smash:none</title></polygon>
+	<polygon points="390,136 390,146 395,146 400,141 395,136 " style="fill: rgb(72,226,20); fill-opacity: 0.9723; stroke: black; stroke-opacity: 1; stroke-width: 1" >
+<title>Identity:0.9723 Organism:GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235.gbk  Coordinates:94090 93005
+Direction:- Gen Id:fig|666666.100037.peg.1552 Function hypothetical protein smash:none</title></polygon>
+	<!--
+	Generated using the Perl SVG Module V2.87
+	by Ronan Oger
+
+	-->
+</svg>
