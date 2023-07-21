@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AGZ93912.1</td>
+              <td>GCN5-related_N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000937/1">BGC0000937</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>89.4</td>
+              <td>103.0</td>
+              <td>3.66e-29</td>
+          </tr>
+    
+          <tr>
+              <td>ABP54658.1</td>
+              <td>GCN5-related_N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000241/1">BGC0000241</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>46.0</td>
+              <td>90.9</td>
+              <td>94.0</td>
+              <td>3.02e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ61869.1</td>
+              <td>N-acetyltransferase_GCN5</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000240/1">BGC0000240</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>45.0</td>
+              <td>90.9</td>
+              <td>89.0</td>
+              <td>1.37e-23</td>
+          </tr>
+    
+          <tr>
+              <td>ARD70883.1</td>
+              <td>N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001693/1">BGC0001693</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>81.8</td>
+              <td>87.0</td>
+              <td>1.1e-22</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

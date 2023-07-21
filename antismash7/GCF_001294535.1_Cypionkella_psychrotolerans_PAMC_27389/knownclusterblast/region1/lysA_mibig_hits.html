@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAS77492.1</td>
+              <td>unknown</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000751/1">BGC0000751</a></td>
+              <td>Saccharide</td>
+              <td>53.0</td>
+              <td>43.7</td>
+              <td>197.0</td>
+              <td>3.9e-61</td>
+          </tr>
+    
+          <tr>
+              <td>QXJ21792.1</td>
+              <td>diaminopimelate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002370/1">BGC0002370</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>100.2</td>
+              <td>201.0</td>
+              <td>1.28e-59</td>
+          </tr>
+    
+          <tr>
+              <td>BAE07075.1</td>
+              <td>BtrK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000693/1">BGC0000693</a></td>
+              <td>Saccharide</td>
+              <td>27.0</td>
+              <td>99.8</td>
+              <td>148.0</td>
+              <td>5.33e-40</td>
+          </tr>
+    
+          <tr>
+              <td>CAG77429.1</td>
+              <td>putative_glutamate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000694/1">BGC0000694</a></td>
+              <td>Saccharide</td>
+              <td>27.0</td>
+              <td>99.8</td>
+              <td>148.0</td>
+              <td>6.14e-40</td>
+          </tr>
+    
+          <tr>
+              <td>BAV56007.1</td>
+              <td>PLP-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001597/1">BGC0001597</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>96.4</td>
+              <td>121.0</td>
+              <td>4.23e-30</td>
+          </tr>
+    
+          <tr>
+              <td>SQF72452.1</td>
+              <td>Siderophore_staphylobactin_biosynthesis_protein_SbnH</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000943/1">BGC0000943</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>86.9</td>
+              <td>100.0</td>
+              <td>1.18e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AIG74589.1</td>
+              <td>Hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002566/1">BGC0002566</a></td>
+              <td>Other</td>
+              <td>23.0</td>
+              <td>105.5</td>
+              <td>60.0</td>
+              <td>2.5e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

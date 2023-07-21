@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABB88947.1</td>
+              <td>ORF1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000650/1">BGC0000650</a></td>
+              <td>Terpene</td>
+              <td>35.0</td>
+              <td>74.2</td>
+              <td>83.0</td>
+              <td>8.51e-20</td>
+          </tr>
+    
+          <tr>
+              <td>EDY47144.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000845/1">BGC0000845</a></td>
+              <td>Other:Non-NRP beta-lactam</td>
+              <td>36.0</td>
+              <td>78.3</td>
+              <td>71.0</td>
+              <td>4.21e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ATY72529.1</td>
+              <td>RNA_polymerase_subunit_sigma</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001574/1">BGC0001574</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>82.8</td>
+              <td>71.0</td>
+              <td>8.22e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ADK32553.1</td>
+              <td>RNA_polymerase,_sigma-24_subunit,_ECF_subfamily</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000529/1">BGC0000529</a></td>
+              <td>RiPP:Lanthipeptide</td>
+              <td>33.0</td>
+              <td>71.2</td>
+              <td>57.0</td>
+              <td>5.87e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QVV57698.1</td>
+              <td>RNA_polymerase_sigma_factor_RpoE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002338/1">BGC0002338</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>76.8</td>
+              <td>56.0</td>
+              <td>1.57e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ATV95614.1</td>
+              <td>RNA_polymerase_sigma-70_factor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001503/1">BGC0001503</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>84.3</td>
+              <td>47.0</td>
+              <td>4.58e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

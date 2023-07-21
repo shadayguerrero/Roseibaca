@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFS60638.1</td>
+              <td>C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000598/1">BGC0000598</a></td>
+              <td>RiPP:Proteusin</td>
+              <td>39.0</td>
+              <td>93.1</td>
+              <td>385.0</td>
+              <td>2.59e-125</td>
+          </tr>
+    
+          <tr>
+              <td>BAP82649.1</td>
+              <td>radical_SAM_domain_containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001148/1">BGC0001148</a></td>
+              <td>NRP+RiPP</td>
+              <td>39.0</td>
+              <td>92.1</td>
+              <td>368.0</td>
+              <td>8.66e-119</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ34927.1</td>
+              <td>putative_radical_SAM_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000986/1">BGC0000986</a></td>
+              <td>NRP+Polyketide</td>
+              <td>41.0</td>
+              <td>80.8</td>
+              <td>354.0</td>
+              <td>8.16e-114</td>
+          </tr>
+    
+          <tr>
+              <td>AFS60637.1</td>
+              <td>C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000598/1">BGC0000598</a></td>
+              <td>RiPP:Proteusin</td>
+              <td>37.0</td>
+              <td>101.9</td>
+              <td>348.0</td>
+              <td>3.84e-111</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030578095.1</td>
+              <td>RiPP_maturation_radical_SAM_C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001753/1">BGC0001753</a></td>
+              <td>RiPP</td>
+              <td>36.0</td>
+              <td>84.8</td>
+              <td>318.0</td>
+              <td>9.94e-100</td>
+          </tr>
+    
+          <tr>
+              <td>AVL27083.1</td>
+              <td>B12-dependent_radical_S-adenosylmethionine</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001485/1">BGC0001485</a></td>
+              <td>Alkaloid</td>
+              <td>34.0</td>
+              <td>88.5</td>
+              <td>306.0</td>
+              <td>1.18e-95</td>
+          </tr>
+    
+          <tr>
+              <td>AFU90397.1</td>
+              <td>radical_SAM-dependent_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000470/1">BGC0000470</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>35.0</td>
+              <td>83.9</td>
+              <td>305.0</td>
+              <td>2.65e-95</td>
+          </tr>
+    
+          <tr>
+              <td>AFU90405.1</td>
+              <td>radical_SAM-dependent_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000470/1">BGC0000470</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>33.0</td>
+              <td>101.0</td>
+              <td>306.0</td>
+              <td>3.49e-95</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09450.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000468/1">BGC0000468</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>35.0</td>
+              <td>91.3</td>
+              <td>297.0</td>
+              <td>1.45e-91</td>
+          </tr>
+    
+          <tr>
+              <td>CBG72687.1</td>
+              <td>Radical_SAM_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001157/1">BGC0001157</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>35.0</td>
+              <td>90.5</td>
+              <td>296.0</td>
+              <td>2.2e-91</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09442.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000468/1">BGC0000468</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>35.0</td>
+              <td>90.8</td>
+              <td>293.0</td>
+              <td>1.37e-90</td>
+          </tr>
+    
+          <tr>
+              <td>CBG72695.1</td>
+              <td>Radical_SAM_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001157/1">BGC0001157</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>36.0</td>
+              <td>81.0</td>
+              <td>290.0</td>
+              <td>2.91e-89</td>
+          </tr>
+    
+          <tr>
+              <td>AFV25488.1</td>
+              <td>BotRMT3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000469/1">BGC0000469</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>34.0</td>
+              <td>82.9</td>
+              <td>288.0</td>
+              <td>3.6e-88</td>
+          </tr>
+    
+          <tr>
+              <td>AFV25480.1</td>
+              <td>BotRMT1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000469/1">BGC0000469</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>34.0</td>
+              <td>90.5</td>
+              <td>287.0</td>
+              <td>5.46e-88</td>
+          </tr>
+    
+          <tr>
+              <td>AFU90401.1</td>
+              <td>radical_SAM-dependent_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000470/1">BGC0000470</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>32.0</td>
+              <td>81.0</td>
+              <td>253.0</td>
+              <td>2.14e-75</td>
+          </tr>
+    
+          <tr>
+              <td>AFV25484.1</td>
+              <td>BotRMT2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000469/1">BGC0000469</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>31.0</td>
+              <td>89.8</td>
+              <td>246.0</td>
+              <td>1.34e-72</td>
+          </tr>
+    
+          <tr>
+              <td>CBG72691.1</td>
+              <td>Radical_SAM_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001157/1">BGC0001157</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>31.0</td>
+              <td>89.7</td>
+              <td>241.0</td>
+              <td>2.32e-70</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09446.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000468/1">BGC0000468</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>30.0</td>
+              <td>89.5</td>
+              <td>238.0</td>
+              <td>2.27e-69</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

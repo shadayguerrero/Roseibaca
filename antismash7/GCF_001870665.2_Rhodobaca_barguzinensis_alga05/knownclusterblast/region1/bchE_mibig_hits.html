@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAF34037.1</td>
+              <td>putative_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000689/1">BGC0000689</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31440.1</td>
+              <td>putative_gentamicin_C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000696/1">BGC0000696</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75717.1</td>
+              <td>C-6&#39;_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001603/1">BGC0001603</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091614395.1</td>
+              <td>tryptophan_2-C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001471/1">BGC0001471</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>24.0</td>
+              <td>78.4</td>
+              <td>59.0</td>
+              <td>6.97e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

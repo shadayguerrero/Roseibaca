@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAW03321.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000982/1">BGC0000982</a></td>
+              <td>NRP+Polyketide</td>
+              <td>29.0</td>
+              <td>105.5</td>
+              <td>147.0</td>
+              <td>3.15e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AAO78481.1</td>
+              <td>aspartate_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001654/1">BGC0001654</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>94.2</td>
+              <td>144.0</td>
+              <td>2.62e-39</td>
+          </tr>
+    
+          <tr>
+              <td>QWT72282.1</td>
+              <td>pyridoxal_phosphate-dependent_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002430/1">BGC0002430</a></td>
+              <td>NRP+Saccharide</td>
+              <td>29.0</td>
+              <td>101.8</td>
+              <td>138.0</td>
+              <td>8.1e-37</td>
+          </tr>
+    
+          <tr>
+              <td>BAI63273.1</td>
+              <td>putative_kynurenine_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000434/1">BGC0000434</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>92.6</td>
+              <td>134.0</td>
+              <td>4.3e-35</td>
+          </tr>
+    
+          <tr>
+              <td>QUJ09162.1</td>
+              <td>Lon15</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002440/1">BGC0002440</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>97.9</td>
+              <td>105.0</td>
+              <td>6.85e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAP34709.1</td>
+              <td>(PLP)-dependent_aspartate_aminotransferase_superfamily</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000078/1">BGC0000078</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>111.3</td>
+              <td>98.0</td>
+              <td>4.15e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ALA09368.1</td>
+              <td>aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001303/1">BGC0001303</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>105.8</td>
+              <td>94.0</td>
+              <td>1.1e-20</td>
+          </tr>
+    
+          <tr>
+              <td>sipL3</td>
+              <td>aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001452/1">BGC0001452</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>99.7</td>
+              <td>89.0</td>
+              <td>5.27e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55214.1</td>
+              <td>aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000142/1">BGC0000142</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>97.1</td>
+              <td>83.0</td>
+              <td>3.66e-17</td>
+          </tr>
+    
+          <tr>
+              <td>UMM61368.1</td>
+              <td>Tsk7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002661/1">BGC0002661</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>106.3</td>
+              <td>80.0</td>
+              <td>5.2e-16</td>
+          </tr>
+    
+          <tr>
+              <td>NP_198465.3</td>
+              <td>Tyrosine_transaminase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001314/1">BGC0001314</a></td>
+              <td>Terpene</td>
+              <td>28.0</td>
+              <td>50.4</td>
+              <td>74.0</td>
+              <td>4.3e-14</td>
+          </tr>
+    
+          <tr>
+              <td>EWS95128.1</td>
+              <td>GntR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000306/1">BGC0000306</a></td>
+              <td>NRP:Lipopeptide</td>
+              <td>27.0</td>
+              <td>90.5</td>
+              <td>64.0</td>
+              <td>1.14e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AFW04575.1</td>
+              <td>histidinol-phosphate_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001783/1">BGC0001783</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>61.5</td>
+              <td>62.0</td>
+              <td>2.39e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CCE28988.1</td>
+              <td>related_to_1-aminocyclopropane-1-carboxylate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001365/1">BGC0001365</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>51.5</td>
+              <td>60.0</td>
+              <td>1.89e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_035850945.1</td>
+              <td>PLP-dependent_aminotransferase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002536/1">BGC0002536</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>52.8</td>
+              <td>59.0</td>
+              <td>2.79e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

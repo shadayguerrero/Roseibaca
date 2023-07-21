@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BCJ07574.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002379/1">BGC0002379</a></td>
+              <td>NRP</td>
+              <td>47.0</td>
+              <td>91.4</td>
+              <td>125.0</td>
+              <td>5.05e-37</td>
+          </tr>
+    
+          <tr>
+              <td>ALP32052.1</td>
+              <td>CycL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001293/1">BGC0001293</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>96.9</td>
+              <td>115.0</td>
+              <td>9.39e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ACB37724.1</td>
+              <td>possible_flavoprotein_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000162/1">BGC0000162</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>96.3</td>
+              <td>109.0</td>
+              <td>2.32e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AMX23317.1</td>
+              <td>putative_Oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001500/1">BGC0001500</a></td>
+              <td>Polyketide</td>
+              <td>47.0</td>
+              <td>78.4</td>
+              <td>108.0</td>
+              <td>3.2e-30</td>
+          </tr>
+    
+          <tr>
+              <td>CAC36752.1</td>
+              <td>putative_oxidoreductase,_MmyF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000914/1">BGC0000914</a></td>
+              <td>Other</td>
+              <td>40.0</td>
+              <td>92.0</td>
+              <td>107.0</td>
+              <td>9.53e-30</td>
+          </tr>
+    
+          <tr>
+              <td>QEO75068.1</td>
+              <td>flavin_reductase_domain_protein_FMN-binding</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002079/1">BGC0002079</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>41.0</td>
+              <td>98.1</td>
+              <td>105.0</td>
+              <td>2.69e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QBK46639.1</td>
+              <td>HrsO</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001960/1">BGC0001960</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>93.2</td>
+              <td>105.0</td>
+              <td>6.14e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AVI57432.1</td>
+              <td>AbmZ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001694/1">BGC0001694</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>96.3</td>
+              <td>101.0</td>
+              <td>1.88e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ACB46494.1</td>
+              <td>NADPH-dependent_flavin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000082/1">BGC0000082</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>94.4</td>
+              <td>100.0</td>
+              <td>7.65e-27</td>
+          </tr>
+    
+          <tr>
+              <td>WP_241538006.1</td>
+              <td>flavin_reductase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001826/1">BGC0001826</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>98.1</td>
+              <td>100.0</td>
+              <td>1.49e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ17112.1</td>
+              <td>flavin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001008/1">BGC0001008</a></td>
+              <td>Polyketide:Iterative type I polyketide+Polyketide:Enediyne type I polyketide</td>
+              <td>43.0</td>
+              <td>104.9</td>
+              <td>98.0</td>
+              <td>4.72e-26</td>
+          </tr>
+    
+          <tr>
+              <td>QED55415.1</td>
+              <td>flavin-dependent_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001984/1">BGC0001984</a></td>
+              <td>NRP</td>
+              <td>40.0</td>
+              <td>92.6</td>
+              <td>97.0</td>
+              <td>7.9e-26</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74976.1</td>
+              <td>omn1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002078/1">BGC0002078</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>41.0</td>
+              <td>88.3</td>
+              <td>94.0</td>
+              <td>1.69e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55139.1</td>
+              <td>flavin_reductase_domain_protein,_FMN-binding</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000150/1">BGC0000150</a></td>
+              <td>NRP+Polyketide:Enediyne type I polyketide</td>
+              <td>41.0</td>
+              <td>93.8</td>
+              <td>94.0</td>
+              <td>1.83e-24</td>
+          </tr>
+    
+          <tr>
+              <td>EFG07999.1</td>
+              <td>Flavin_reductase-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000843/1">BGC0000843</a></td>
+              <td>Other:Non-NRP beta-lactam</td>
+              <td>37.0</td>
+              <td>92.6</td>
+              <td>93.0</td>
+              <td>3e-24</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97263.1</td>
+              <td>putative_flavin-dependent_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002383/1">BGC0002383</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>90.1</td>
+              <td>87.0</td>
+              <td>4.26e-22</td>
+          </tr>
+    
+          <tr>
+              <td>POM23769.1</td>
+              <td>FMN_reductase_(NADH)_NtaB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002369/1">BGC0002369</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>98.8</td>
+              <td>87.0</td>
+              <td>5.95e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AOC89006.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001652/1">BGC0001652</a></td>
+              <td>NRP</td>
+              <td>39.0</td>
+              <td>102.5</td>
+              <td>87.0</td>
+              <td>1.73e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AGI62216.1</td>
+              <td>flavin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001335/1">BGC0001335</a></td>
+              <td>Alkaloid</td>
+              <td>36.0</td>
+              <td>95.1</td>
+              <td>79.0</td>
+              <td>2.31e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AZY92020.1</td>
+              <td>putative_flavin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002022/1">BGC0002022</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>88.3</td>
+              <td>75.0</td>
+              <td>3.6e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AWS21282.1</td>
+              <td>NADH-FMN_oxidoreductase_RutF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001934/1">BGC0001934</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>88.3</td>
+              <td>75.0</td>
+              <td>4.18e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAD38877.1</td>
+              <td>putative_flavin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000111/1">BGC0000111</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>96.3</td>
+              <td>69.0</td>
+              <td>6.79e-15</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

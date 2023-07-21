@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACN38340.1</td>
+              <td>putative_sugar-alcohol_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000714/1">BGC0000714</a></td>
+              <td>Saccharide</td>
+              <td>31.0</td>
+              <td>99.0</td>
+              <td>164.0</td>
+              <td>7.71e-44</td>
+          </tr>
+    
+          <tr>
+              <td>CAG38701.1</td>
+              <td>putative_lividomycin_6&#39;-dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000708/1">BGC0000708</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>103.1</td>
+              <td>139.0</td>
+              <td>3.01e-35</td>
+          </tr>
+    
+          <tr>
+              <td>CAF32378.1</td>
+              <td>putative_paromomycin_6&#39;-dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000712/1">BGC0000712</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>101.0</td>
+              <td>137.0</td>
+              <td>1.92e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AEG64677.1</td>
+              <td>putative_choline_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000379/1">BGC0000379</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>105.2</td>
+              <td>132.0</td>
+              <td>6.29e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF33316.1</td>
+              <td>putative_bifunctional_neomycin_6&#39;-and_6&#39;&#39;&#39;-dehydrogenase,_NeoQ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000709/1">BGC0000709</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>101.4</td>
+              <td>132.0</td>
+              <td>9.88e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAH58694.1</td>
+              <td>putative_sugar_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000711/1">BGC0000711</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>101.4</td>
+              <td>132.0</td>
+              <td>9.88e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31536.1</td>
+              <td>putative_fortimicin_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000695/1">BGC0000695</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>100.8</td>
+              <td>126.0</td>
+              <td>1.09e-30</td>
+          </tr>
+    
+          <tr>
+              <td>CAG34714.1</td>
+              <td>putative_sugar-alcohol_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000713/1">BGC0000713</a></td>
+              <td>Saccharide</td>
+              <td>27.0</td>
+              <td>102.7</td>
+              <td>124.0</td>
+              <td>5.81e-30</td>
+          </tr>
+    
+          <tr>
+              <td>CAI47657.1</td>
+              <td>putative_hexosamine-6-dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000692/1">BGC0000692</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>100.2</td>
+              <td>109.0</td>
+              <td>3.75e-25</td>
+          </tr>
+    
+          <tr>
+              <td>BAD20757.1</td>
+              <td>oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000702/1">BGC0000702</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>98.8</td>
+              <td>107.0</td>
+              <td>1.7e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QEU90630.1</td>
+              <td>GMC_family_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000703/1">BGC0000703</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>98.8</td>
+              <td>107.0</td>
+              <td>1.7e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CAF60534.1</td>
+              <td>GntX_like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000704/1">BGC0000704</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>98.8</td>
+              <td>107.0</td>
+              <td>1.7e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31587.1</td>
+              <td>oxidoreductase;_putative_kanamycin_6&#39;-dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000705/1">BGC0000705</a></td>
+              <td>Saccharide</td>
+              <td>26.0</td>
+              <td>98.8</td>
+              <td>107.0</td>
+              <td>1.7e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ATV95643.1</td>
+              <td>Oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001503/1">BGC0001503</a></td>
+              <td>Polyketide</td>
+              <td>23.0</td>
+              <td>106.0</td>
+              <td>69.0</td>
+              <td>4.01e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AAP03110.1</td>
+              <td>putative_GMC_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000874/1">BGC0000874</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>102.7</td>
+              <td>64.0</td>
+              <td>2.89e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AGK82825.1</td>
+              <td>alcohol_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001323/1">BGC0001323</a></td>
+              <td>Terpene</td>
+              <td>22.0</td>
+              <td>104.7</td>
+              <td>60.0</td>
+              <td>3.92e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AGK82821.1</td>
+              <td>alcohol_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001324/1">BGC0001324</a></td>
+              <td>Terpene</td>
+              <td>22.0</td>
+              <td>105.0</td>
+              <td>60.0</td>
+              <td>5.17e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AGK82832.1</td>
+              <td>alcohol_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001321/1">BGC0001321</a></td>
+              <td>Terpene</td>
+              <td>22.0</td>
+              <td>104.7</td>
+              <td>59.0</td>
+              <td>9e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AGK82806.1</td>
+              <td>alcohol_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001322/1">BGC0001322</a></td>
+              <td>Terpene</td>
+              <td>22.0</td>
+              <td>105.0</td>
+              <td>57.0</td>
+              <td>3.59e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55148.1</td>
+              <td>glucose-methanol-choline_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000150/1">BGC0000150</a></td>
+              <td>NRP+Polyketide:Enediyne type I polyketide</td>
+              <td>22.0</td>
+              <td>106.6</td>
+              <td>53.0</td>
+              <td>4.98e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

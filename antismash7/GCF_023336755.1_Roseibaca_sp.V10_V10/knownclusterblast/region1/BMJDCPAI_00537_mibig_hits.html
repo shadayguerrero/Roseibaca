@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ONK09687.1</td>
+              <td>putative_protein-S-isoprenylcysteine_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001647/1">BGC0001647</a></td>
+              <td>Polyketide</td>
+              <td>48.0</td>
+              <td>94.4</td>
+              <td>124.0</td>
+              <td>3.22e-36</td>
+          </tr>
+    
+          <tr>
+              <td>BAG17300.1</td>
+              <td>methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000282/1">BGC0000282</a></td>
+              <td>Polyketide</td>
+              <td>47.0</td>
+              <td>103.7</td>
+              <td>120.0</td>
+              <td>5.62e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AYM52859.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001964/1">BGC0001964</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>101.2</td>
+              <td>121.0</td>
+              <td>5.84e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ABF90016.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001831/1">BGC0001831</a></td>
+              <td>Polyketide</td>
+              <td>48.0</td>
+              <td>99.4</td>
+              <td>121.0</td>
+              <td>9.69e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AMB48453.1</td>
+              <td>isoprenylcysteine_carboxyl_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001357/1">BGC0001357</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>94.4</td>
+              <td>80.0</td>
+              <td>6.33e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AFV96144.1</td>
+              <td>phospholipid_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001064/1">BGC0001064</a></td>
+              <td>Polyketide:Modular type I polyketide+Polyketide:Type III polyketide</td>
+              <td>36.0</td>
+              <td>93.8</td>
+              <td>79.0</td>
+              <td>2.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ARU81124.1</td>
+              <td>CylJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001566/1">BGC0001566</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>93.8</td>
+              <td>79.0</td>
+              <td>2.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AQA28565.1</td>
+              <td>isoprenylcysteine_carboxyl_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001663/1">BGC0001663</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>95.7</td>
+              <td>68.0</td>
+              <td>2.95e-14</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

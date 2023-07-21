@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAC73331.1</td>
+              <td>putative_peptide_ABC_transporter_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001587/1">BGC0001587</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>83.9</td>
+              <td>80.0</td>
+              <td>1.96e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CBG67725.1</td>
+              <td>putative_secreted_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002568/1">BGC0002568</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>83.9</td>
+              <td>75.0</td>
+              <td>7.61e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AGM05557.1</td>
+              <td>peptide/nickel_transport_system_substrate-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002098/1">BGC0002098</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>49.3</td>
+              <td>74.0</td>
+              <td>2.25e-13</td>
+          </tr>
+    
+          <tr>
+              <td>SPE99796.1</td>
+              <td>Oligopeptide-binding_protein_AppA_precursor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002567/1">BGC0002567</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>77.0</td>
+              <td>72.0</td>
+              <td>7.2e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AEK75508.1</td>
+              <td>BC_transporter_oligopeptide_binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000001/1">BGC0000001</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>22.0</td>
+              <td>80.1</td>
+              <td>66.0</td>
+              <td>4.96e-11</td>
+          </tr>
+    
+          <tr>
+              <td>RLV71178.1</td>
+              <td>Dipeptide_ABC_transporter,_membrane_component</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001846/1">BGC0001846</a></td>
+              <td>NRP+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>29.0</td>
+              <td>22.0</td>
+              <td>63.0</td>
+              <td>4.5e-10</td>
+          </tr>
+    
+          <tr>
+              <td>UKO95758.1</td>
+              <td>ABC_transporter_substrate-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002632/1">BGC0002632</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>39.1</td>
+              <td>61.0</td>
+              <td>1.99e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

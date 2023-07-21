@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AOE23565.1</td>
+              <td>FoxOI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001598/1">BGC0001598</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>78.8</td>
+              <td>95.0</td>
+              <td>5.12e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AEE65502.1</td>
+              <td>geranylgeranyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>32.0</td>
+              <td>77.6</td>
+              <td>91.0</td>
+              <td>7.7e-20</td>
+          </tr>
+    
+          <tr>
+              <td>PVC99887.1</td>
+              <td>geranylgeranyl_reductase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002100/1">BGC0002100</a></td>
+              <td>NRP+Other</td>
+              <td>29.0</td>
+              <td>105.3</td>
+              <td>76.0</td>
+              <td>8.89e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf39</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001013/1">BGC0001013</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>56.9</td>
+              <td>59.0</td>
+              <td>4.27e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf12</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001366/1">BGC0001366</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>42.8</td>
+              <td>50.0</td>
+              <td>1.94e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AFP87533.1</td>
+              <td>FADH2-dependent_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001159/1">BGC0001159</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>28.0</td>
+              <td>47.6</td>
+              <td>50.0</td>
+              <td>3.47e-06</td>
+          </tr>
+    
+          <tr>
+              <td>BAG17299.1</td>
+              <td>monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000282/1">BGC0000282</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>80.9</td>
+              <td>49.0</td>
+              <td>6.48e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

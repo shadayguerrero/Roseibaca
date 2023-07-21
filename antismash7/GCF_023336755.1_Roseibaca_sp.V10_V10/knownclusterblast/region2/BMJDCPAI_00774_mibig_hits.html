@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QPP46752.1</td>
+              <td>MBL_fold_metallo-hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002500/1">BGC0002500</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>88.3</td>
+              <td>92.0</td>
+              <td>3.78e-21</td>
+          </tr>
+    
+          <tr>
+              <td>MCG7203798.1</td>
+              <td>MBL_fold_metallo-hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000248/1">BGC0000248</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>83.9</td>
+              <td>87.0</td>
+              <td>3.05e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AXL88819.1</td>
+              <td>MBL_fold_metallo-hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001895/1">BGC0001895</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>64.2</td>
+              <td>82.0</td>
+              <td>1.29e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAC79046.1</td>
+              <td>second_ring_cyclase_(CYC)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000245/1">BGC0000245</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>71.5</td>
+              <td>80.0</td>
+              <td>1.08e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QFS19052.1</td>
+              <td>cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002506/1">BGC0002506</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>74.1</td>
+              <td>79.0</td>
+              <td>3.16e-16</td>
+          </tr>
+    
+          <tr>
+              <td>CAC44204.1</td>
+              <td>cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000194/1">BGC0000194</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>26.0</td>
+              <td>90.2</td>
+              <td>77.0</td>
+              <td>6.57e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QBK46630.1</td>
+              <td>HrsI1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001960/1">BGC0001960</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>83.2</td>
+              <td>74.0</td>
+              <td>8.5e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AAC18113.1</td>
+              <td>cyclase/dehydrase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000225/1">BGC0000225</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>84.5</td>
+              <td>74.0</td>
+              <td>1.69e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AQW35062.1</td>
+              <td>second_ring_cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001675/1">BGC0001675</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>83.5</td>
+              <td>74.0</td>
+              <td>1.76e-14</td>
+          </tr>
+    
+          <tr>
+              <td>BAL90271.1</td>
+              <td>putative_polyketide_cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002021/1">BGC0002021</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>93.0</td>
+              <td>71.0</td>
+              <td>1.82e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ACX83638.1</td>
+              <td>cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000221/1">BGC0000221</a></td>
+              <td>Polyketide</td>
+              <td>23.0</td>
+              <td>83.2</td>
+              <td>56.0</td>
+              <td>1.1e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACI88866.1</td>
+              <td>AlnR_cyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000195/1">BGC0000195</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>22.0</td>
+              <td>97.5</td>
+              <td>52.0</td>
+              <td>2.87e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

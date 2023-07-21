@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAC73331.1</td>
+              <td>putative_peptide_ABC_transporter_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001587/1">BGC0001587</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>90.6</td>
+              <td>110.0</td>
+              <td>1.43e-25</td>
+          </tr>
+    
+          <tr>
+              <td>CBG67725.1</td>
+              <td>putative_secreted_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002568/1">BGC0002568</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>86.1</td>
+              <td>106.0</td>
+              <td>3.63e-24</td>
+          </tr>
+    
+          <tr>
+              <td>SPE99796.1</td>
+              <td>Oligopeptide-binding_protein_AppA_precursor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002567/1">BGC0002567</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>87.8</td>
+              <td>106.0</td>
+              <td>4.9e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AVI57419.1</td>
+              <td>AbmF1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001694/1">BGC0001694</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>63.5</td>
+              <td>99.0</td>
+              <td>1.04e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AGM05557.1</td>
+              <td>peptide/nickel_transport_system_substrate-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002098/1">BGC0002098</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>93.2</td>
+              <td>98.0</td>
+              <td>2.03e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAN85534.1</td>
+              <td>ABC_transporter_component,_periplasmic_oligopeptide_binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001101/1">BGC0001101</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>27.0</td>
+              <td>54.5</td>
+              <td>93.0</td>
+              <td>9.07e-20</td>
+          </tr>
+    
+          <tr>
+              <td>WP_235215216.1</td>
+              <td>ABC_transporter_substrate-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002656/1">BGC0002656</a></td>
+              <td>Polyketide</td>
+              <td>23.0</td>
+              <td>93.4</td>
+              <td>93.0</td>
+              <td>9.99e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ADC45595.1</td>
+              <td>extracellular_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000093/1">BGC0000093</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>72.6</td>
+              <td>87.0</td>
+              <td>6.81e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AFO93369.1</td>
+              <td>ABC_transporter,_extracellular_solute-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000932/1">BGC0000932</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>71.2</td>
+              <td>80.0</td>
+              <td>1.56e-15</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

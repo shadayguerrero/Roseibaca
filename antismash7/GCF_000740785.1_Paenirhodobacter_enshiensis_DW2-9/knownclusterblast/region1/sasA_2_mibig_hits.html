@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AGU42431.1</td>
+              <td>Cmm23</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000842/1">BGC0000842</a></td>
+              <td>Other:Non-NRP beta-lactam</td>
+              <td>31.0</td>
+              <td>59.7</td>
+              <td>105.0</td>
+              <td>5.24e-24</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32285.1</td>
+              <td>Jer5</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000080/1">BGC0000080</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>57.0</td>
+              <td>103.0</td>
+              <td>1.73e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AFI57016.1</td>
+              <td>QmnRg2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000133/1">BGC0000133</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>60.9</td>
+              <td>99.0</td>
+              <td>4.28e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ABB69090.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000260/1">BGC0000260</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>67.8</td>
+              <td>99.0</td>
+              <td>6.72e-22</td>
+          </tr>
+    
+          <tr>
+              <td>QKW60382.1</td>
+              <td>HAMP_domain-containing_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002288/1">BGC0002288</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>62.6</td>
+              <td>92.0</td>
+              <td>7.93e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AFL48547.1</td>
+              <td>putative_histidine_kinase_sensor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000084/1">BGC0000084</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>49.9</td>
+              <td>85.0</td>
+              <td>3.28e-17</td>
+          </tr>
+    
+          <tr>
+              <td>WP_011104627.1</td>
+              <td>heavy_metal_sensor_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002571/1">BGC0002571</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>70.0</td>
+              <td>81.0</td>
+              <td>4.48e-16</td>
+          </tr>
+    
+          <tr>
+              <td>KON97027.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002122/1">BGC0002122</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>54.6</td>
+              <td>78.0</td>
+              <td>2.61e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AXA91286.1</td>
+              <td>hybrid_sensor_histidine_kinase/response_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002044/1">BGC0002044</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>66.9</td>
+              <td>77.0</td>
+              <td>1.24e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AWR88438.1</td>
+              <td>putative_sensor_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001522/1">BGC0001522</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>54.4</td>
+              <td>76.0</td>
+              <td>2.05e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32279.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000014/1">BGC0000014</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>45.6</td>
+              <td>75.0</td>
+              <td>5.82e-14</td>
+          </tr>
+    
+          <tr>
+              <td>CAA60456.1</td>
+              <td>sensory_protein_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001040/1">BGC0001040</a></td>
+              <td>NRP+Polyketide</td>
+              <td>26.0</td>
+              <td>65.8</td>
+              <td>70.0</td>
+              <td>1.47e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AZM50119.1</td>
+              <td>two-component_sensor_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002702/1">BGC0002702</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>67.8</td>
+              <td>67.0</td>
+              <td>7.92e-12</td>
+          </tr>
+    
+          <tr>
+              <td>QVV57669.1</td>
+              <td>HAMP_domain-containing_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002338/1">BGC0002338</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>47.9</td>
+              <td>63.0</td>
+              <td>1.84e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAB60253.1</td>
+              <td>MrsK2_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000527/1">BGC0000527</a></td>
+              <td>RiPP:Lanthipeptide</td>
+              <td>25.0</td>
+              <td>60.0</td>
+              <td>62.0</td>
+              <td>7.32e-10</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00043.1</td>
+              <td>HAMP_domain-containing_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001877/1">BGC0001877</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>66.9</td>
+              <td>61.0</td>
+              <td>8.67e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AEE65496.1</td>
+              <td>PAS/PAC_sensor_signal_transduction_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>27.0</td>
+              <td>48.8</td>
+              <td>62.0</td>
+              <td>9.63e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAH60131.1</td>
+              <td>putative_two-component_system_sensor_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000700/1">BGC0000700</a></td>
+              <td>Saccharide</td>
+              <td>30.0</td>
+              <td>55.3</td>
+              <td>61.0</td>
+              <td>1.2e-09</td>
+          </tr>
+    
+          <tr>
+              <td>EDY47142.1</td>
+              <td>histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000845/1">BGC0000845</a></td>
+              <td>Other:Non-NRP beta-lactam</td>
+              <td>28.0</td>
+              <td>55.0</td>
+              <td>61.0</td>
+              <td>1.81e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CCC21117.1</td>
+              <td>signal_transduction_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000171/1">BGC0000171</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>27.0</td>
+              <td>57.5</td>
+              <td>59.0</td>
+              <td>6.55e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93436.1</td>
+              <td>sensor_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000413/1">BGC0000413</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>55.5</td>
+              <td>57.0</td>
+              <td>2.01e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31456.2</td>
+              <td>putative_two-component_system_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000696/1">BGC0000696</a></td>
+              <td>Saccharide</td>
+              <td>24.0</td>
+              <td>77.6</td>
+              <td>55.0</td>
+              <td>8.2e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75733.1</td>
+              <td>putative_two-component_system_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001603/1">BGC0001603</a></td>
+              <td>Saccharide</td>
+              <td>24.0</td>
+              <td>77.6</td>
+              <td>55.0</td>
+              <td>8.2e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAE53347.1</td>
+              <td>transmamebrane_sensor_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000440/1">BGC0000440</a></td>
+              <td>NRP:Glycopeptide</td>
+              <td>26.0</td>
+              <td>61.3</td>
+              <td>54.0</td>
+              <td>1.2e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CAG15006.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000441/1">BGC0000441</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>61.3</td>
+              <td>54.0</td>
+              <td>1.2e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AAM80542.1</td>
+              <td>VanSst</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000290/1">BGC0000290</a></td>
+              <td>NRP:Glycopeptide</td>
+              <td>25.0</td>
+              <td>61.1</td>
+              <td>54.0</td>
+              <td>1.61e-07</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78674.1</td>
+              <td>two-component_sensor_histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001417/1">BGC0001417</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>26.0</td>
+              <td>68.9</td>
+              <td>53.0</td>
+              <td>4.91e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32275.1</td>
+              <td>Amb7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000014/1">BGC0000014</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>53.9</td>
+              <td>52.0</td>
+              <td>1.64e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ABI75118.1</td>
+              <td>histidine_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000188/1">BGC0000188</a></td>
+              <td>Alkaloid</td>
+              <td>23.0</td>
+              <td>57.5</td>
+              <td>50.0</td>
+              <td>2.45e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32300.1</td>
+              <td>Jer7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000080/1">BGC0000080</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>54.4</td>
+              <td>50.0</td>
+              <td>3.69e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

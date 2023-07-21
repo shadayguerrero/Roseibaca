@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAK53468.1</td>
+              <td>putative_electron-transferring_flavoprotein_alpha_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000774/1">BGC0000774</a></td>
+              <td>Saccharide:Lipopolysaccharide</td>
+              <td>51.0</td>
+              <td>101.0</td>
+              <td>249.0</td>
+              <td>1.6e-81</td>
+          </tr>
+    
+          <tr>
+              <td>QEV63753.1</td>
+              <td>electron_transfer_flavoprotein_subunit_alpha/FixB_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002657/1">BGC0002657</a></td>
+              <td>Polyketide+NRP</td>
+              <td>39.0</td>
+              <td>101.9</td>
+              <td>172.0</td>
+              <td>3.6e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AAF81241.1</td>
+              <td>flavoprotein_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000244/1">BGC0000244</a></td>
+              <td>Polyketide</td>
+              <td>70.0</td>
+              <td>39.6</td>
+              <td>167.0</td>
+              <td>2.17e-49</td>
+          </tr>
+    
+          <tr>
+              <td>AAO20845.2</td>
+              <td>putative_electron_transferring_flavoprotein_alpha_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000783/1">BGC0000783</a></td>
+              <td>Saccharide</td>
+              <td>72.0</td>
+              <td>35.1</td>
+              <td>155.0</td>
+              <td>1.91e-47</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

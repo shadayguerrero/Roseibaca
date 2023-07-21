@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AKT74265.1</td>
+              <td>TxnRg4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002141/1">BGC0002141</a></td>
+              <td>Polyketide</td>
+              <td>46.0</td>
+              <td>29.2</td>
+              <td>50.0</td>
+              <td>3.5e-07</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37907.1</td>
+              <td>two-component_system_response_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001979/1">BGC0001979</a></td>
+              <td>Polyketide</td>
+              <td>46.0</td>
+              <td>28.2</td>
+              <td>49.0</td>
+              <td>6.5e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CBH32801.1</td>
+              <td>putative_regulatory_gene</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000263/1">BGC0000263</a></td>
+              <td>Polyketide</td>
+              <td>41.0</td>
+              <td>29.6</td>
+              <td>47.0</td>
+              <td>2.19e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ20013.1</td>
+              <td>putative_DNA_binding_regulatory_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000903/1">BGC0000903</a></td>
+              <td>Other</td>
+              <td>42.0</td>
+              <td>28.7</td>
+              <td>47.0</td>
+              <td>4.85e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QLH55576.1</td>
+              <td>ferric_siderophore_ABC_transporter_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002043/1">BGC0002043</a></td>
+              <td>RiPP</td>
+              <td>55.0</td>
+              <td>99.0</td>
+              <td>312.0</td>
+              <td>5.82e-106</td>
+          </tr>
+    
+          <tr>
+              <td>AFO89681.1</td>
+              <td>ABC_transporter,_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002694/1">BGC0002694</a></td>
+              <td>Other</td>
+              <td>46.0</td>
+              <td>90.4</td>
+              <td>224.0</td>
+              <td>1.76e-71</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50191.1</td>
+              <td>putative_ferric_siderophore_ABC_transporter_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000410/1">BGC0000410</a></td>
+              <td>NRP</td>
+              <td>39.0</td>
+              <td>95.5</td>
+              <td>207.0</td>
+              <td>1.02e-64</td>
+          </tr>
+    
+          <tr>
+              <td>BAC87900.1</td>
+              <td>probable_ferric_acinetobactin_transport_system_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000294/1">BGC0000294</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>94.6</td>
+              <td>184.0</td>
+              <td>9.2e-56</td>
+          </tr>
+    
+          <tr>
+              <td>AAR12525.1</td>
+              <td>ferric_anguibactin_transport_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002468/1">BGC0002468</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>95.9</td>
+              <td>153.0</td>
+              <td>5.02e-44</td>
+          </tr>
+    
+          <tr>
+              <td>RLV71196.1</td>
+              <td>iron-hydroxamate_transporter_permease_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001846/1">BGC0001846</a></td>
+              <td>NRP+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>32.0</td>
+              <td>39.5</td>
+              <td>52.0</td>
+              <td>6.18e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

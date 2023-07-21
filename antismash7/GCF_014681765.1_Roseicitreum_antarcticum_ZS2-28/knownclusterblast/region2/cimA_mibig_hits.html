@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AKT74269.1</td>
+              <td>TxnP2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002141/1">BGC0002141</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>98.2</td>
+              <td>393.0</td>
+              <td>9.49e-131</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37903.1</td>
+              <td>citramalate_synthase/2-isopropylmalate</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001979/1">BGC0001979</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>94.8</td>
+              <td>384.0</td>
+              <td>3.78e-127</td>
+          </tr>
+    
+          <tr>
+              <td>QWT72272.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002430/1">BGC0002430</a></td>
+              <td>NRP+Saccharide</td>
+              <td>33.0</td>
+              <td>64.6</td>
+              <td>159.0</td>
+              <td>3.52e-43</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62871.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002373/1">BGC0002373</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>66.1</td>
+              <td>150.0</td>
+              <td>7.23e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ61876.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000240/1">BGC0000240</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>33.0</td>
+              <td>60.7</td>
+              <td>144.0</td>
+              <td>5.17e-38</td>
+          </tr>
+    
+          <tr>
+              <td>QUJ09159.1</td>
+              <td>Lon12</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002440/1">BGC0002440</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>63.9</td>
+              <td>139.0</td>
+              <td>6.05e-36</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

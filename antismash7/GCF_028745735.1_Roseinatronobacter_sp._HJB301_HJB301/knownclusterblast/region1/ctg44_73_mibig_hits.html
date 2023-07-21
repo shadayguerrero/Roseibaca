@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACR48327.1</td>
+              <td>Nos1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000610/1">BGC0000610</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>35.0</td>
+              <td>32.4</td>
+              <td>92.0</td>
+              <td>4.31e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AFU65884.1</td>
+              <td>DacR1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000216/1">BGC0000216</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>33.9</td>
+              <td>92.0</td>
+              <td>4.43e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AQM37587.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001424/1">BGC0001424</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>91.0</td>
+              <td>8.29e-19</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78732.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001421/1">BGC0001421</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>91.0</td>
+              <td>1.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78759.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001423/1">BGC0001423</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>91.0</td>
+              <td>1.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78798.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001427/1">BGC0001427</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>91.0</td>
+              <td>1.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25644.1</td>
+              <td>translation_elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002363/1">BGC0002363</a></td>
+              <td>RiPP</td>
+              <td>38.0</td>
+              <td>23.9</td>
+              <td>90.0</td>
+              <td>1.94e-18</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78785.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001426/1">BGC0001426</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>27.5</td>
+              <td>90.0</td>
+              <td>2.54e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54177.1</td>
+              <td>Pau10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001731/1">BGC0001731</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>32.4</td>
+              <td>89.0</td>
+              <td>3.4e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54230.1</td>
+              <td>PauY10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001732/1">BGC0001732</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>32.4</td>
+              <td>89.0</td>
+              <td>3.4e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AEI98646.1</td>
+              <td>CtcC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000209/1">BGC0000209</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>24.4</td>
+              <td>88.0</td>
+              <td>7.3e-18</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78772.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001425/1">BGC0001425</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>36.0</td>
+              <td>27.4</td>
+              <td>88.0</td>
+              <td>1.03e-17</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78812.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001428/1">BGC0001428</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>26.9</td>
+              <td>87.0</td>
+              <td>1.36e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AXI91537.1</td>
+              <td>FunR3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001944/1">BGC0001944</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>25.0</td>
+              <td>86.0</td>
+              <td>3.13e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QIQ28607.1</td>
+              <td>Nbc11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002541/1">BGC0002541</a></td>
+              <td>Other</td>
+              <td>28.0</td>
+              <td>46.7</td>
+              <td>63.0</td>
+              <td>3.71e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AEQ20521.1</td>
+              <td>translation_initiation_factor_IF-2_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001591/1">BGC0001591</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>36.2</td>
+              <td>63.0</td>
+              <td>4.18e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ARF06208.1</td>
+              <td>sulfate_adenylyltransferase_subunit_1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001593/1">BGC0001593</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>46.9</td>
+              <td>60.0</td>
+              <td>3.5e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ABY83149.1</td>
+              <td>Azi10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000960/1">BGC0000960</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>47.7</td>
+              <td>59.0</td>
+              <td>6.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BAW27679.1</td>
+              <td>sulfate_adenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001764/1">BGC0001764</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>45.1</td>
+              <td>59.0</td>
+              <td>8.31e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BAV57454.1</td>
+              <td>sulfate_adenylyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001818/1">BGC0001818</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>45.6</td>
+              <td>59.0</td>
+              <td>1.04e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

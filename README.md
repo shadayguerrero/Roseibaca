@@ -39,6 +39,10 @@ The family used for this study can be seen in the file list.txt and is given by:
 | GCF_000429765.1   	| _Gemmobacter nectariphilus_             	| DSM 15620  	|
 | GCF_002871005.1   	| _Acidimangrovimonas sediminis_           	| MS2-2      	|
 | GCF_004010155.1   	| _Solirhodobacter olei_                   	| Pet-1      	|
+| GCF_020667835.1   	| _Roseibaca sp.Y0-43_               	| Y0-43       	|
+| GCF_013415485.1   	| _Rhabdonatronobacter sediminivivens_             	| IM2376  	|
+| GCF_001884735.1   	| _Natronohydrobacter thiooxidans_           	| AH01      	|
+| GCF_028745735.1   	| _Roseinatronobacter sp.HJB301_                   	| HJB301      	|
 
 ## Data Preparation
 ### [Download Genomes](/raw_data/)

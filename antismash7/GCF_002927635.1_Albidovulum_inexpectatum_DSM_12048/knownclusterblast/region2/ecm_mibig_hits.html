@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAE95607.1</td>
+              <td>putative_coenzyme_B12-dependent_mutase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000706/1">BGC0000706</a></td>
+              <td>Saccharide</td>
+              <td>62.0</td>
+              <td>100.9</td>
+              <td>804.0</td>
+              <td>1.03e-288</td>
+          </tr>
+    
+          <tr>
+              <td>UHY14133.1</td>
+              <td>methylmalonyl-CoA_mutase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002671/1">BGC0002671</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>100.2</td>
+              <td>397.0</td>
+              <td>1.17e-128</td>
+          </tr>
+    
+          <tr>
+              <td>WP_016325496.1</td>
+              <td>methylmalonyl-CoA_mutase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001283/1">BGC0001283</a></td>
+              <td>Polyketide</td>
+              <td>43.0</td>
+              <td>73.6</td>
+              <td>362.0</td>
+              <td>1.15e-117</td>
+          </tr>
+    
+          <tr>
+              <td>WP_033261449.1</td>
+              <td>methylmalonyl-CoA_mutase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002009/1">BGC0002009</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>74.7</td>
+              <td>317.0</td>
+              <td>2.29e-100</td>
+          </tr>
+    
+          <tr>
+              <td>WP_019634562.1</td>
+              <td>methylmalonyl-CoA_mutase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001443/1">BGC0001443</a></td>
+              <td>NRP+Polyketide</td>
+              <td>33.0</td>
+              <td>73.3</td>
+              <td>224.0</td>
+              <td>1.66e-65</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ34001.1</td>
+              <td>methylmalonyl-CoA_mutase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001442/1">BGC0001442</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>72.0</td>
+              <td>221.0</td>
+              <td>2.28e-64</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

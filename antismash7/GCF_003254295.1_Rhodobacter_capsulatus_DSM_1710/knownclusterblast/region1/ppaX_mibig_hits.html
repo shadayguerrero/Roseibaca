@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACI88874.1</td>
+              <td>alnumycin_P_phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000195/1">BGC0000195</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>37.0</td>
+              <td>98.6</td>
+              <td>102.0</td>
+              <td>1.66e-26</td>
+          </tr>
+    
+          <tr>
+              <td>AJO72753.1</td>
+              <td>HAD-superfamily_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001381/1">BGC0001381</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>100.9</td>
+              <td>96.0</td>
+              <td>2.98e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QDX19371.1</td>
+              <td>HAD_phosphatase_and_DUF4243_domain_containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002295/1">BGC0002295</a></td>
+              <td>NRP+Saccharide</td>
+              <td>36.0</td>
+              <td>97.2</td>
+              <td>100.0</td>
+              <td>6.51e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AFV27436.1</td>
+              <td>putative_phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000375/1">BGC0000375</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>95.4</td>
+              <td>100.0</td>
+              <td>6.51e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AAD28462.1</td>
+              <td>MitJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000915/1">BGC0000915</a></td>
+              <td>Other:Aminocoumarin</td>
+              <td>33.0</td>
+              <td>85.8</td>
+              <td>71.0</td>
+              <td>1.36e-14</td>
+          </tr>
+    
+          <tr>
+              <td>CAP12591.1</td>
+              <td>phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000219/1">BGC0000219</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>31.0</td>
+              <td>96.3</td>
+              <td>69.0</td>
+              <td>4.18e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABS90484.1</td>
+              <td>putative_hydroxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001106/1">BGC0001106</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>99.1</td>
+              <td>69.0</td>
+              <td>7.77e-14</td>
+          </tr>
+    
+          <tr>
+              <td>QES95472.1</td>
+              <td>phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002453/1">BGC0002453</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>91.3</td>
+              <td>68.0</td>
+              <td>1.64e-13</td>
+          </tr>
+    
+          <tr>
+              <td>CQR60486.1</td>
+              <td>RifM_homologue,_phosphoglycolate_phosphatase,_AHBA_biosynthesis</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001287/1">BGC0001287</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>104.1</td>
+              <td>67.0</td>
+              <td>4.55e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AHH25587.1</td>
+              <td>phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000957/1">BGC0000957</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>90.4</td>
+              <td>65.0</td>
+              <td>2.6e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BCK51659.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002520/1">BGC0002520</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>96.8</td>
+              <td>64.0</td>
+              <td>3.73e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ASZ00158.1</td>
+              <td>phosphoglycolate_phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001785/1">BGC0001785</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>53.7</td>
+              <td>62.0</td>
+              <td>9.22e-12</td>
+          </tr>
+    
+          <tr>
+              <td>WP_003062302.1</td>
+              <td>HAD-IA_family_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002009/1">BGC0002009</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>91.7</td>
+              <td>60.0</td>
+              <td>1.41e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ATY46604.1</td>
+              <td>phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001666/1">BGC0001666</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>101.4</td>
+              <td>59.0</td>
+              <td>1.71e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ADM46368.1</td>
+              <td>phosphatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000106/1">BGC0000106</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>103.2</td>
+              <td>57.0</td>
+              <td>1.72e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ABV97162.1</td>
+              <td>AHBA_synthesis_associated_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000137/1">BGC0000137</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>90.4</td>
+              <td>55.0</td>
+              <td>5.84e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12656.1</td>
+              <td>RmpM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001759/1">BGC0001759</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>91.7</td>
+              <td>55.0</td>
+              <td>8.26e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAC01721.1</td>
+              <td>RifM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000136/1">BGC0000136</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>91.7</td>
+              <td>54.0</td>
+              <td>1.13e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

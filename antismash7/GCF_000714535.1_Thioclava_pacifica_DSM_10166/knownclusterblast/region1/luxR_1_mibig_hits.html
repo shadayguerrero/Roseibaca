@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_006890625.1</td>
+              <td>LuxR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001480/1">BGC0001480</a></td>
+              <td>Other</td>
+              <td>33.0</td>
+              <td>79.8</td>
+              <td>81.0</td>
+              <td>2.79e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ABI91455.1</td>
+              <td>transcriptional_regulator,_LuxR_family</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001094/1">BGC0001094</a></td>
+              <td>NRP+Polyketide</td>
+              <td>26.0</td>
+              <td>95.7</td>
+              <td>70.0</td>
+              <td>4.9e-14</td>
+          </tr>
+    
+          <tr>
+              <td>CAD70192.1</td>
+              <td>putative_HTH_LUXR_domain-containing_transcription_activator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001047/1">BGC0001047</a></td>
+              <td>NRP+Polyketide</td>
+              <td>42.0</td>
+              <td>26.6</td>
+              <td>50.0</td>
+              <td>4.18e-07</td>
+          </tr>
+    
+          <tr>
+              <td>BAC41336.1</td>
+              <td>transcription_regulator_like_protein_EpsA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000761/1">BGC0000761</a></td>
+              <td>Saccharide</td>
+              <td>48.0</td>
+              <td>23.2</td>
+              <td>50.0</td>
+              <td>6.59e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

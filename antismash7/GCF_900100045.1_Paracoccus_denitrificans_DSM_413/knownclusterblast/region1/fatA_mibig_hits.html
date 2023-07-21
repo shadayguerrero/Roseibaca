@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>SKB24644.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002455/1">BGC0002455</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>98.2</td>
+              <td>487.0</td>
+              <td>4.47e-163</td>
+          </tr>
+    
+          <tr>
+              <td>AFI41906.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000387/1">BGC0000387</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>103.9</td>
+              <td>333.0</td>
+              <td>1.11e-102</td>
+          </tr>
+    
+          <tr>
+              <td>NAO96322.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002117/1">BGC0002117</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>96.2</td>
+              <td>194.0</td>
+              <td>2.39e-52</td>
+          </tr>
+    
+          <tr>
+              <td>WP_157140642.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001999/1">BGC0001999</a></td>
+              <td>NRP</td>
+              <td>23.0</td>
+              <td>92.3</td>
+              <td>129.0</td>
+              <td>1.05e-30</td>
+          </tr>
+    
+          <tr>
+              <td>WP_105828638.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002087/1">BGC0002087</a></td>
+              <td>NRP+Polyketide</td>
+              <td>24.0</td>
+              <td>98.1</td>
+              <td>127.0</td>
+              <td>4.76e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AXF14771.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002563/1">BGC0002563</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>97.6</td>
+              <td>125.0</td>
+              <td>2.56e-29</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

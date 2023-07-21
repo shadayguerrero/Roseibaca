@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AHA81985.1</td>
+              <td>Oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000199/1">BGC0000199</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>32.0</td>
+              <td>98.2</td>
+              <td>168.0</td>
+              <td>4.54e-48</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ42335.1</td>
+              <td>putative_oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000273/1">BGC0000273</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>32.0</td>
+              <td>97.9</td>
+              <td>166.0</td>
+              <td>2.38e-47</td>
+          </tr>
+    
+          <tr>
+              <td>BBI47416.1</td>
+              <td>iron-sulfur_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002258/1">BGC0002258</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>73.7</td>
+              <td>117.0</td>
+              <td>3.94e-29</td>
+          </tr>
+    
+          <tr>
+              <td>CCA65704.1</td>
+              <td>predicted_Rieske-[2Fe-2s]-domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001343/1">BGC0001343</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>49.5</td>
+              <td>58.0</td>
+              <td>4.68e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ABI75098.1</td>
+              <td>phenylpropionate_dioxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000188/1">BGC0000188</a></td>
+              <td>Alkaloid</td>
+              <td>24.0</td>
+              <td>51.0</td>
+              <td>53.0</td>
+              <td>1.94e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

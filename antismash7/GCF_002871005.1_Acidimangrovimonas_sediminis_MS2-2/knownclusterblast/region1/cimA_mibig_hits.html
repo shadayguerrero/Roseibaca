@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AKT74269.1</td>
+              <td>TxnP2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002141/1">BGC0002141</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>96.9</td>
+              <td>381.0</td>
+              <td>3.72e-126</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37903.1</td>
+              <td>citramalate_synthase/2-isopropylmalate</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001979/1">BGC0001979</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>97.7</td>
+              <td>370.0</td>
+              <td>5.84e-122</td>
+          </tr>
+    
+          <tr>
+              <td>QWT72272.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002430/1">BGC0002430</a></td>
+              <td>NRP+Saccharide</td>
+              <td>32.0</td>
+              <td>63.1</td>
+              <td>155.0</td>
+              <td>1.16e-41</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62871.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002373/1">BGC0002373</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>63.1</td>
+              <td>149.0</td>
+              <td>9.45e-40</td>
+          </tr>
+    
+          <tr>
+              <td>QUJ09159.1</td>
+              <td>Lon12</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002440/1">BGC0002440</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>64.6</td>
+              <td>134.0</td>
+              <td>3.48e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ61876.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000240/1">BGC0000240</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>30.0</td>
+              <td>61.7</td>
+              <td>128.0</td>
+              <td>2.17e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AFM38993.1</td>
+              <td>trans-homoaconitate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001859/1">BGC0001859</a></td>
+              <td>Other:Phosphonate</td>
+              <td>26.0</td>
+              <td>66.7</td>
+              <td>110.0</td>
+              <td>5.68e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ABB90392.1</td>
+              <td>FrbC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000904/1">BGC0000904</a></td>
+              <td>Other</td>
+              <td>28.0</td>
+              <td>67.4</td>
+              <td>107.0</td>
+              <td>4.29e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ55947.1</td>
+              <td>hydroxymethylglutaryl-CoA_lyase-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000302/1">BGC0000302</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>59.7</td>
+              <td>83.0</td>
+              <td>1.21e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACC81025.1</td>
+              <td>pyruvate_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001479/1">BGC0001479</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>60.4</td>
+              <td>82.0</td>
+              <td>1.62e-16</td>
+          </tr>
+    
+          <tr>
+              <td>PluTT01m_09605</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000383/1">BGC0000383</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>27.0</td>
+              <td>42.6</td>
+              <td>59.0</td>
+              <td>1.41e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70939.1</td>
+              <td>isopropyl_malate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>74.5</td>
+              <td>61.0</td>
+              <td>1.7e-09</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020058094.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001220/1">BGC0001220</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>77.0</td>
+              <td>56.0</td>
+              <td>6.19e-08</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91873.1</td>
+              <td>HtyA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>62.4</td>
+              <td>56.0</td>
+              <td>1.13e-07</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34345.1</td>
+              <td>isopropyl_malate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>23.0</td>
+              <td>70.3</td>
+              <td>55.0</td>
+              <td>1.97e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63167.1</td>
+              <td>AniE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>23.0</td>
+              <td>66.2</td>
+              <td>53.0</td>
+              <td>7.64e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AHL44346.1</td>
+              <td>PLP-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000820/1">BGC0000820</a></td>
+              <td>Alkaloid</td>
+              <td>44.0</td>
+              <td>96.7</td>
+              <td>325.0</td>
+              <td>2.09e-106</td>
+          </tr>
+    
+          <tr>
+              <td>BAT10625.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002406/1">BGC0002406</a></td>
+              <td>Other</td>
+              <td>39.0</td>
+              <td>101.3</td>
+              <td>275.0</td>
+              <td>1.31e-86</td>
+          </tr>
+    
+          <tr>
+              <td>XP_006351976.1</td>
+              <td>tyrosine_decarboxylase_1-like</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002722/1">BGC0002722</a></td>
+              <td>Alkaloid+Terpene+Saccharide</td>
+              <td>34.0</td>
+              <td>99.8</td>
+              <td>263.0</td>
+              <td>4.41e-82</td>
+          </tr>
+    
+          <tr>
+              <td>AWD37887.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase_DfoJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001572/1">BGC0001572</a></td>
+              <td>Other</td>
+              <td>28.0</td>
+              <td>82.6</td>
+              <td>142.0</td>
+              <td>7.54e-37</td>
+          </tr>
+    
+          <tr>
+              <td>CDG17983.1</td>
+              <td>Pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000464/1">BGC0000464</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>25.0</td>
+              <td>74.2</td>
+              <td>99.0</td>
+              <td>1.12e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CDG17988.1</td>
+              <td>Pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000464/1">BGC0000464</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>25.0</td>
+              <td>74.2</td>
+              <td>97.0</td>
+              <td>2.61e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAS98783.1</td>
+              <td>polyketide_synthase/nonribosomal_peptide_synthase_hybrid</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001001/1">BGC0001001</a></td>
+              <td>NRP+Polyketide</td>
+              <td>22.0</td>
+              <td>65.7</td>
+              <td>70.0</td>
+              <td>4.13e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

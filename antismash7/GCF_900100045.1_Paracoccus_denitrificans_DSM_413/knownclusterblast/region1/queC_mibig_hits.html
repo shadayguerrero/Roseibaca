@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAA12530.1</td>
+              <td>ExsB_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000802/1">BGC0000802</a></td>
+              <td>Saccharide</td>
+              <td>75.0</td>
+              <td>83.3</td>
+              <td>296.0</td>
+              <td>2.44e-102</td>
+          </tr>
+    
+          <tr>
+              <td>ACF06644.1</td>
+              <td>ToyM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000879/1">BGC0000879</a></td>
+              <td>Other</td>
+              <td>53.0</td>
+              <td>94.8</td>
+              <td>237.0</td>
+              <td>6.79e-79</td>
+          </tr>
+    
+          <tr>
+              <td>AHH97432.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002354/1">BGC0002354</a></td>
+              <td>RiPP</td>
+              <td>53.0</td>
+              <td>93.6</td>
+              <td>229.0</td>
+              <td>1.47e-75</td>
+          </tr>
+    
+          <tr>
+              <td>AFV92622.1</td>
+              <td>TymM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000881/1">BGC0000881</a></td>
+              <td>Other</td>
+              <td>53.0</td>
+              <td>93.6</td>
+              <td>228.0</td>
+              <td>2.95e-75</td>
+          </tr>
+    
+          <tr>
+              <td>APT68169.1</td>
+              <td>ToyM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001808/1">BGC0001808</a></td>
+              <td>Other</td>
+              <td>53.0</td>
+              <td>93.6</td>
+              <td>228.0</td>
+              <td>2.95e-75</td>
+          </tr>
+    
+          <tr>
+              <td>AIN46707.1</td>
+              <td>7-cyano-7-deazaguanine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001217/1">BGC0001217</a></td>
+              <td>Other</td>
+              <td>39.0</td>
+              <td>99.6</td>
+              <td>134.0</td>
+              <td>1.39e-38</td>
+          </tr>
+    
+          <tr>
+              <td>ACN38358.1</td>
+              <td>transcription_regulator_related_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000714/1">BGC0000714</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>96.6</td>
+              <td>124.0</td>
+              <td>1.17e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31447.1</td>
+              <td>putative_gentamicin_production_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000696/1">BGC0000696</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>96.6</td>
+              <td>121.0</td>
+              <td>2.25e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75724.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001603/1">BGC0001603</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>96.6</td>
+              <td>121.0</td>
+              <td>2.25e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31559.1</td>
+              <td>putative_fortimicin_production_protein;_unknown_ATP/GTP-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000695/1">BGC0000695</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>96.6</td>
+              <td>120.0</td>
+              <td>2.36e-33</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

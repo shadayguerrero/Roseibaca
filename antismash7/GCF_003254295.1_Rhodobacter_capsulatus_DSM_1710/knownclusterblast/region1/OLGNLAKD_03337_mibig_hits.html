@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABW70809.1</td>
+              <td>PchE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002475/1">BGC0002475</a></td>
+              <td>NRP</td>
+              <td>53.0</td>
+              <td>77.1</td>
+              <td>57.0</td>
+              <td>5.29e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ABU70376.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001890/1">BGC0001890</a></td>
+              <td>NRP</td>
+              <td>44.0</td>
+              <td>84.3</td>
+              <td>51.0</td>
+              <td>9.45e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CBA63655.1</td>
+              <td>aryl_carrier_for_2,3-dihydroxybenzoate</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000368/1">BGC0000368</a></td>
+              <td>NRP</td>
+              <td>50.0</td>
+              <td>67.5</td>
+              <td>48.0</td>
+              <td>1.29e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AEI70244.1</td>
+              <td>isochorismatase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000401/1">BGC0000401</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>95.2</td>
+              <td>47.0</td>
+              <td>3.08e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

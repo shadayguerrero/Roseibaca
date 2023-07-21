@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AHL44346.1</td>
+              <td>PLP-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000820/1">BGC0000820</a></td>
+              <td>Alkaloid</td>
+              <td>42.0</td>
+              <td>96.1</td>
+              <td>323.0</td>
+              <td>8.57e-106</td>
+          </tr>
+    
+          <tr>
+              <td>XP_006351976.1</td>
+              <td>tyrosine_decarboxylase_1-like</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002722/1">BGC0002722</a></td>
+              <td>Alkaloid+Terpene+Saccharide</td>
+              <td>35.0</td>
+              <td>99.1</td>
+              <td>279.0</td>
+              <td>2.65e-88</td>
+          </tr>
+    
+          <tr>
+              <td>BAT10625.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002406/1">BGC0002406</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>100.9</td>
+              <td>275.0</td>
+              <td>1.35e-86</td>
+          </tr>
+    
+          <tr>
+              <td>AWD37887.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase_DfoJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001572/1">BGC0001572</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>91.6</td>
+              <td>149.0</td>
+              <td>3.47e-39</td>
+          </tr>
+    
+          <tr>
+              <td>ACB01064.1</td>
+              <td>L-2,4-diaminobutyrate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002470/1">BGC0002470</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>81.4</td>
+              <td>132.0</td>
+              <td>8.43e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AFY40273.1</td>
+              <td>L-2,4-diaminobutyrate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002633/1">BGC0002633</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>88.1</td>
+              <td>116.0</td>
+              <td>7.14e-28</td>
+          </tr>
+    
+          <tr>
+              <td>CDG17983.1</td>
+              <td>Pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000464/1">BGC0000464</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>26.0</td>
+              <td>86.4</td>
+              <td>110.0</td>
+              <td>1.25e-25</td>
+          </tr>
+    
+          <tr>
+              <td>CDG17988.1</td>
+              <td>Pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000464/1">BGC0000464</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>25.0</td>
+              <td>86.4</td>
+              <td>107.0</td>
+              <td>1.28e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AAS98783.1</td>
+              <td>polyketide_synthase/nonribosomal_peptide_synthase_hybrid</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001001/1">BGC0001001</a></td>
+              <td>NRP+Polyketide</td>
+              <td>24.0</td>
+              <td>65.6</td>
+              <td>84.0</td>
+              <td>1.29e-16</td>
+          </tr>
+    
+          <tr>
+              <td>CCM44323.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001056/1">BGC0001056</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:PUFA synthase or related polyketide</td>
+              <td>25.0</td>
+              <td>42.4</td>
+              <td>50.0</td>
+              <td>2.61e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

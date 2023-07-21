@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AXI91537.1</td>
+              <td>FunR3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001944/1">BGC0001944</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>80.2</td>
+              <td>147.0</td>
+              <td>6.93e-37</td>
+          </tr>
+    
+          <tr>
+              <td>ACR48327.1</td>
+              <td>Nos1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000610/1">BGC0000610</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>28.0</td>
+              <td>47.0</td>
+              <td>105.0</td>
+              <td>2.17e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AEI98646.1</td>
+              <td>CtcC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000209/1">BGC0000209</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>23.8</td>
+              <td>105.0</td>
+              <td>2.35e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AFU65884.1</td>
+              <td>DacR1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000216/1">BGC0000216</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>23.4</td>
+              <td>104.0</td>
+              <td>4.17e-23</td>
+          </tr>
+    
+          <tr>
+              <td>ADO67785.1</td>
+              <td>tpa10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000615/1">BGC0000615</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>29.0</td>
+              <td>55.8</td>
+              <td>104.0</td>
+              <td>6.03e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54177.1</td>
+              <td>Pau10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001731/1">BGC0001731</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>27.2</td>
+              <td>100.0</td>
+              <td>1.8e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54230.1</td>
+              <td>PauY10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001732/1">BGC0001732</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>27.2</td>
+              <td>100.0</td>
+              <td>1.8e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25644.1</td>
+              <td>translation_elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002363/1">BGC0002363</a></td>
+              <td>RiPP</td>
+              <td>40.0</td>
+              <td>24.1</td>
+              <td>99.0</td>
+              <td>2.38e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25645.1</td>
+              <td>elongation_factor_Tu</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002363/1">BGC0002363</a></td>
+              <td>RiPP</td>
+              <td>32.0</td>
+              <td>45.2</td>
+              <td>94.0</td>
+              <td>2.36e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ADO67786.1</td>
+              <td>tpa11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000615/1">BGC0000615</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>30.0</td>
+              <td>45.2</td>
+              <td>89.0</td>
+              <td>1.41e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AEQ20521.1</td>
+              <td>translation_initiation_factor_IF-2_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001591/1">BGC0001591</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>22.6</td>
+              <td>58.0</td>
+              <td>1.6e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAN85548.1</td>
+              <td>adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001101/1">BGC0001101</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>65.0</td>
+              <td>100.6</td>
+              <td>585.0</td>
+              <td>1.22e-208</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22275.1</td>
+              <td>putative_adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000279/1">BGC0000279</a></td>
+              <td>Polyketide</td>
+              <td>65.0</td>
+              <td>100.6</td>
+              <td>584.0</td>
+              <td>2.72e-208</td>
+          </tr>
+    
+          <tr>
+              <td>ABI22140.1</td>
+              <td>putative_adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000422/1">BGC0000422</a></td>
+              <td>NRP</td>
+              <td>65.0</td>
+              <td>103.2</td>
+              <td>581.0</td>
+              <td>4.83e-207</td>
+          </tr>
+    
+          <tr>
+              <td>AXM42947.1</td>
+              <td>S-adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001941/1">BGC0001941</a></td>
+              <td>NRP+Polyketide</td>
+              <td>63.0</td>
+              <td>101.1</td>
+              <td>581.0</td>
+              <td>5.16e-207</td>
+          </tr>
+    
+          <tr>
+              <td>BAC76505.1</td>
+              <td>probable_adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000085/1">BGC0000085</a></td>
+              <td>Polyketide</td>
+              <td>64.0</td>
+              <td>103.0</td>
+              <td>575.0</td>
+              <td>1.39e-204</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46704.1</td>
+              <td>adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001177/1">BGC0001177</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>63.0</td>
+              <td>103.2</td>
+              <td>572.0</td>
+              <td>1.67e-203</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ20010.1</td>
+              <td>adenosyl-homocysteine_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000903/1">BGC0000903</a></td>
+              <td>Other</td>
+              <td>63.0</td>
+              <td>103.2</td>
+              <td>572.0</td>
+              <td>2.54e-203</td>
+          </tr>
+    
+          <tr>
+              <td>CAK50773.1</td>
+              <td>adoHcyase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000247/1">BGC0000247</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Oligosaccharide</td>
+              <td>63.0</td>
+              <td>103.2</td>
+              <td>561.0</td>
+              <td>2.5e-199</td>
+          </tr>
+    
+          <tr>
+              <td>ABX71103.1</td>
+              <td>Lct20</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000238/1">BGC0000238</a></td>
+              <td>Polyketide</td>
+              <td>63.0</td>
+              <td>101.5</td>
+              <td>557.0</td>
+              <td>1.05e-197</td>
+          </tr>
+    
+          <tr>
+              <td>SCF06555.1</td>
+              <td>adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002435/1">BGC0002435</a></td>
+              <td>Other</td>
+              <td>35.0</td>
+              <td>96.3</td>
+              <td>251.0</td>
+              <td>7.97e-79</td>
+          </tr>
+    
+          <tr>
+              <td>BAV57062.1</td>
+              <td>S-adenosyl-L-homocysteine_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001514/1">BGC0001514</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>96.3</td>
+              <td>245.0</td>
+              <td>2.79e-76</td>
+          </tr>
+    
+          <tr>
+              <td>SCF06525.1</td>
+              <td>adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002435/1">BGC0002435</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>93.1</td>
+              <td>234.0</td>
+              <td>4.33e-72</td>
+          </tr>
+    
+          <tr>
+              <td>BAV57066.1</td>
+              <td>S-adenosyl-L-homocysteine_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001514/1">BGC0001514</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>91.1</td>
+              <td>204.0</td>
+              <td>5.9e-61</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ68819.1</td>
+              <td>mmyH</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002129/1">BGC0002129</a></td>
+              <td>Polyketide</td>
+              <td>67.0</td>
+              <td>31.8</td>
+              <td>191.0</td>
+              <td>3.77e-59</td>
+          </tr>
+    
+          <tr>
+              <td>SCF06515.1</td>
+              <td>adenosylhomocysteinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002435/1">BGC0002435</a></td>
+              <td>Other</td>
+              <td>32.0</td>
+              <td>90.5</td>
+              <td>198.0</td>
+              <td>2.02e-58</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

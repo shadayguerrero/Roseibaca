@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QQZ01569.1</td>
+              <td>thiamine_pyrophosphate_protein_central_region</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002498/1">BGC0002498</a></td>
+              <td>Other</td>
+              <td>47.0</td>
+              <td>100.5</td>
+              <td>499.0</td>
+              <td>1.56e-170</td>
+          </tr>
+    
+          <tr>
+              <td>ADC45547.1</td>
+              <td>glyoxylate_carboligase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000093/1">BGC0000093</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>73.1</td>
+              <td>104.0</td>
+              <td>3.4e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AHL24480.1</td>
+              <td>phosphonopyruvate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000806/1">BGC0000806</a></td>
+              <td>Saccharide</td>
+              <td>27.0</td>
+              <td>32.5</td>
+              <td>50.0</td>
+              <td>3.36e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

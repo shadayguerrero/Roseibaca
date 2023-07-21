@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADA71976.1</td>
+              <td>L-ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000860/1">BGC0000860</a></td>
+              <td>Other</td>
+              <td>82.0</td>
+              <td>97.7</td>
+              <td>220.0</td>
+              <td>2.05e-75</td>
+          </tr>
+    
+          <tr>
+              <td>ABY40741.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000856/1">BGC0000856</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>94.7</td>
+              <td>135.0</td>
+              <td>7.01e-42</td>
+          </tr>
+    
+          <tr>
+              <td>ACB30332.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000859/1">BGC0000859</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>94.7</td>
+              <td>135.0</td>
+              <td>7.01e-42</td>
+          </tr>
+    
+          <tr>
+              <td>AAY96772.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000854/1">BGC0000854</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>94.7</td>
+              <td>134.0</td>
+              <td>2e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ABY40746.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000857/1">BGC0000857</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>94.7</td>
+              <td>134.0</td>
+              <td>2e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ABB30172.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000855/1">BGC0000855</a></td>
+              <td>Other</td>
+              <td>52.0</td>
+              <td>100.8</td>
+              <td>134.0</td>
+              <td>2.84e-41</td>
+          </tr>
+    
+          <tr>
+              <td>AAS02096.1</td>
+              <td>ThpC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000853/1">BGC0000853</a></td>
+              <td>Other</td>
+              <td>44.0</td>
+              <td>94.7</td>
+              <td>108.0</td>
+              <td>3.87e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AAK12085.1</td>
+              <td>EctC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000852/1">BGC0000852</a></td>
+              <td>Other</td>
+              <td>42.0</td>
+              <td>93.2</td>
+              <td>107.0</td>
+              <td>1.17e-30</td>
+          </tr>
+    
+          <tr>
+              <td>QOE83928.1</td>
+              <td>EctC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002052/1">BGC0002052</a></td>
+              <td>Other:Ectoine</td>
+              <td>43.0</td>
+              <td>94.7</td>
+              <td>107.0</td>
+              <td>1.31e-30</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36634.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002097/1">BGC0002097</a></td>
+              <td>NRP+Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>43.0</td>
+              <td>94.0</td>
+              <td>91.0</td>
+              <td>1.97e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52664.1</td>
+              <td>L-ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001073/1">BGC0001073</a></td>
+              <td>NRP+Polyketide</td>
+              <td>39.0</td>
+              <td>94.0</td>
+              <td>84.0</td>
+              <td>2.04e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFU65884.1</td>
+              <td>DacR1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000216/1">BGC0000216</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>74.9</td>
+              <td>108.0</td>
+              <td>3.22e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AEI98646.1</td>
+              <td>CtcC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000209/1">BGC0000209</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>23.1</td>
+              <td>106.0</td>
+              <td>1.33e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AXI91537.1</td>
+              <td>FunR3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001944/1">BGC0001944</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>23.5</td>
+              <td>103.0</td>
+              <td>7.86e-23</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25645.1</td>
+              <td>elongation_factor_Tu</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002363/1">BGC0002363</a></td>
+              <td>RiPP</td>
+              <td>33.0</td>
+              <td>46.6</td>
+              <td>100.0</td>
+              <td>2.12e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ADO67786.1</td>
+              <td>tpa11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000615/1">BGC0000615</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>46.1</td>
+              <td>99.0</td>
+              <td>6.9e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ADO67785.1</td>
+              <td>tpa10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000615/1">BGC0000615</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>28.0</td>
+              <td>54.9</td>
+              <td>100.0</td>
+              <td>1.77e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ACR48327.1</td>
+              <td>Nos1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000610/1">BGC0000610</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>38.0</td>
+              <td>27.1</td>
+              <td>96.0</td>
+              <td>2.97e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25644.1</td>
+              <td>translation_elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002363/1">BGC0002363</a></td>
+              <td>RiPP</td>
+              <td>33.0</td>
+              <td>33.4</td>
+              <td>94.0</td>
+              <td>1.6e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54177.1</td>
+              <td>Pau10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001731/1">BGC0001731</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>92.0</td>
+              <td>4.91e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54230.1</td>
+              <td>PauY10</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001732/1">BGC0001732</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>27.4</td>
+              <td>92.0</td>
+              <td>4.91e-19</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78812.1</td>
+              <td>elongation_factor_G</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001428/1">BGC0001428</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>25.0</td>
+              <td>38.5</td>
+              <td>69.0</td>
+              <td>6.61e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AQX14446.1</td>
+              <td>bifunctional_ATP_sulfurylase_(ATPS)_/_adenosine_5&#39;-phosphosulfate_kinase_(APSK)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001671/1">BGC0001671</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>50.2</td>
+              <td>66.0</td>
+              <td>5.7e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AEQ20521.1</td>
+              <td>translation_initiation_factor_IF-2_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001591/1">BGC0001591</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>48.1</td>
+              <td>60.0</td>
+              <td>5.24e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAK95841.1</td>
+              <td>putative_photobactin_outer_membrane_receptor_precursor_PhuA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002495/1">BGC0002495</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>95.7</td>
+              <td>310.0</td>
+              <td>1.8e-95</td>
+          </tr>
+    
+          <tr>
+              <td>CAL44983.1</td>
+              <td>putative_vanchrobactin_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000454/1">BGC0000454</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>99.7</td>
+              <td>244.0</td>
+              <td>6.24e-71</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ59902.1</td>
+              <td>enterobactin-iron_outermembrane_receptor_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002680/1">BGC0002680</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>97.7</td>
+              <td>230.0</td>
+              <td>8.78e-66</td>
+          </tr>
+    
+          <tr>
+              <td>AXB34353.1</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002415/1">BGC0002415</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>92.9</td>
+              <td>209.0</td>
+              <td>6.67e-58</td>
+          </tr>
+    
+          <tr>
+              <td>SDF67234.1</td>
+              <td>TonB-dependent_siderophore_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002422/1">BGC0002422</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>101.4</td>
+              <td>186.0</td>
+              <td>4.63e-50</td>
+          </tr>
+    
+          <tr>
+              <td>AAK89715.2</td>
+              <td>TonB-dependent_receptor</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002107/1">BGC0002107</a></td>
+              <td>NRP+Polyketide</td>
+              <td>25.0</td>
+              <td>104.8</td>
+              <td>164.0</td>
+              <td>3.83e-42</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

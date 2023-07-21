@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AXI91542.1</td>
+              <td>FunA9</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001944/1">BGC0001944</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>96.4</td>
+              <td>110.0</td>
+              <td>2.06e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ94407.1</td>
+              <td>phosphopantatheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000040/1">BGC0000040</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>95.6</td>
+              <td>103.0</td>
+              <td>7.1e-27</td>
+          </tr>
+    
+          <tr>
+              <td>AZF85904.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001963/1">BGC0001963</a></td>
+              <td>NRP+Polyketide</td>
+              <td>33.0</td>
+              <td>93.8</td>
+              <td>100.0</td>
+              <td>9.64e-26</td>
+          </tr>
+    
+          <tr>
+              <td>QBF51747.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001856/1">BGC0001856</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>35.0</td>
+              <td>90.7</td>
+              <td>100.0</td>
+              <td>1.01e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AGD80631.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000394/1">BGC0000394</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>87.1</td>
+              <td>100.0</td>
+              <td>1.11e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001931/1">BGC0001931</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>88.0</td>
+              <td>97.0</td>
+              <td>2.39e-24</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00040.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase_superfamily_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001877/1">BGC0001877</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>96.0</td>
+              <td>97.0</td>
+              <td>2.85e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AAF71762.1</td>
+              <td>nysF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000115/1">BGC0000115</a></td>
+              <td>Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>33.0</td>
+              <td>92.4</td>
+              <td>97.0</td>
+              <td>4.6e-24</td>
+          </tr>
+    
+          <tr>
+              <td>BCK51657.1</td>
+              <td>putative_phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002520/1">BGC0002520</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>92.9</td>
+              <td>96.0</td>
+              <td>6.48e-24</td>
+          </tr>
+    
+          <tr>
+              <td>BAE93744.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000164/1">BGC0000164</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>92.9</td>
+              <td>97.0</td>
+              <td>4.36e-23</td>
+          </tr>
+    
+          <tr>
+              <td>MCB8905703.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase_superfamily_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002340/1">BGC0002340</a></td>
+              <td>NRP+Other</td>
+              <td>33.0</td>
+              <td>89.3</td>
+              <td>94.0</td>
+              <td>5.39e-23</td>
+          </tr>
+    
+          <tr>
+              <td>CAN89630.1</td>
+              <td>putative_Sfp_type_phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001070/1">BGC0001070</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>34.0</td>
+              <td>85.3</td>
+              <td>92.0</td>
+              <td>2.85e-22</td>
+          </tr>
+    
+          <tr>
+              <td>BAV55989.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001597/1">BGC0001597</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>91.1</td>
+              <td>91.0</td>
+              <td>5.39e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAK06801.1</td>
+              <td>putative_phosphopantetheinyl_transferase_SimC8</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001072/1">BGC0001072</a></td>
+              <td>Saccharide+Polyketide:Modular type I polyketide+Polyketide:Type II polyketide+Other:Aminocoumarin</td>
+              <td>37.0</td>
+              <td>80.4</td>
+              <td>89.0</td>
+              <td>1.62e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QKG20165.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002124/1">BGC0002124</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>69.8</td>
+              <td>89.0</td>
+              <td>1.74e-21</td>
+          </tr>
+    
+          <tr>
+              <td>BAO66511.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000042/1">BGC0000042</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>91.6</td>
+              <td>89.0</td>
+              <td>1.75e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAL15597.1</td>
+              <td>Sim19</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000270/1">BGC0000270</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>80.4</td>
+              <td>89.0</td>
+              <td>2.26e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QBL56176.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase_superfamily_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002376/1">BGC0002376</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>85.3</td>
+              <td>89.0</td>
+              <td>4.44e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ACY01405.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000083/1">BGC0000083</a></td>
+              <td>Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>32.0</td>
+              <td>78.2</td>
+              <td>89.0</td>
+              <td>5.28e-21</td>
+          </tr>
+    
+          <tr>
+              <td>BBA84060.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001649/1">BGC0001649</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>95.1</td>
+              <td>88.0</td>
+              <td>9.55e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CAL17535.1</td>
+              <td>siderophore_biosynthesis_protein,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002465/1">BGC0002465</a></td>
+              <td>NRP</td>
+              <td>36.0</td>
+              <td>82.2</td>
+              <td>87.0</td>
+              <td>2.03e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AKL64824.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002072/1">BGC0002072</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>35.0</td>
+              <td>73.3</td>
+              <td>86.0</td>
+              <td>7.48e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AAX98203.1</td>
+              <td>phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000052/1">BGC0000052</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>63.1</td>
+              <td>85.0</td>
+              <td>7.83e-20</td>
+          </tr>
+    
+          <tr>
+              <td>ORC16616.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001341/1">BGC0001341</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>76.4</td>
+              <td>81.0</td>
+              <td>1.46e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAB69186.1</td>
+              <td>phosphopantheteinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000117/1">BGC0000117</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>86.7</td>
+              <td>82.0</td>
+              <td>2.15e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QZA73302.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002385/1">BGC0002385</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>77.8</td>
+              <td>81.0</td>
+              <td>2.64e-18</td>
+          </tr>
+    
+          <tr>
+              <td>PPQ57499.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002016/1">BGC0002016</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>72.4</td>
+              <td>81.0</td>
+              <td>3.71e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AAO07753.1</td>
+              <td>Phosphopantetheinyl_transferase_component_of_siderophore_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000460/1">BGC0000460</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>68.9</td>
+              <td>76.0</td>
+              <td>2.14e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AKA59075.1</td>
+              <td>4&#39;-phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001619/1">BGC0001619</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>72.4</td>
+              <td>76.0</td>
+              <td>2.76e-16</td>
+          </tr>
+    
+          <tr>
+              <td>BCB17019.1</td>
+              <td>putative_phosphopantetheinyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002523/1">BGC0002523</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>71.1</td>
+              <td>72.0</td>
+              <td>8.93e-15</td>
+          </tr>
+    
+          <tr>
+              <td>BAC57934.1</td>
+              <td>probable_phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002474/1">BGC0002474</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>68.0</td>
+              <td>69.0</td>
+              <td>6.14e-14</td>
+          </tr>
+    
+          <tr>
+              <td>CCM44325.1</td>
+              <td>Phosphopantetheinyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001056/1">BGC0001056</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:PUFA synthase or related polyketide</td>
+              <td>29.0</td>
+              <td>92.4</td>
+              <td>65.0</td>
+              <td>2.88e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

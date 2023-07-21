@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAF34037.1</td>
+              <td>putative_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000689/1">BGC0000689</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31440.1</td>
+              <td>putative_gentamicin_C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000696/1">BGC0000696</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ARV75717.1</td>
+              <td>C-6&#39;_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001603/1">BGC0001603</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>71.2</td>
+              <td>134.0</td>
+              <td>5.89e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CAF31547.1</td>
+              <td>fortimicin_KL1_C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000695/1">BGC0000695</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>80.9</td>
+              <td>118.0</td>
+              <td>8.74e-28</td>
+          </tr>
+    
+          <tr>
+              <td>AGU42423.1</td>
+              <td>CmmP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000842/1">BGC0000842</a></td>
+              <td>Other:Non-NRP beta-lactam</td>
+              <td>25.0</td>
+              <td>73.3</td>
+              <td>114.0</td>
+              <td>9.73e-27</td>
+          </tr>
+    
+          <tr>
+              <td>BAF92596.1</td>
+              <td>methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000118/1">BGC0000118</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>62.9</td>
+              <td>112.0</td>
+              <td>1.06e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ACJ24870.1</td>
+              <td>putative_C-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000119/1">BGC0000119</a></td>
+              <td>Polyketide:Iterative type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>28.0</td>
+              <td>62.9</td>
+              <td>112.0</td>
+              <td>1.06e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AAD32727.1</td>
+              <td>MmcD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000915/1">BGC0000915</a></td>
+              <td>Other:Aminocoumarin</td>
+              <td>28.0</td>
+              <td>62.5</td>
+              <td>106.0</td>
+              <td>9.21e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

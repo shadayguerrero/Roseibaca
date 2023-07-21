@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AMQ23505.1</td>
+              <td>SagB-type_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002584/1">BGC0002584</a></td>
+              <td>RiPP</td>
+              <td>35.0</td>
+              <td>85.8</td>
+              <td>159.0</td>
+              <td>1.84e-42</td>
+          </tr>
+    
+          <tr>
+              <td>BBA31819.1</td>
+              <td>YcaO_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001797/1">BGC0001797</a></td>
+              <td>RiPP</td>
+              <td>32.0</td>
+              <td>98.2</td>
+              <td>159.0</td>
+              <td>2.25e-42</td>
+          </tr>
+    
+          <tr>
+              <td>WP_199814150.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001753/1">BGC0001753</a></td>
+              <td>RiPP</td>
+              <td>35.0</td>
+              <td>90.1</td>
+              <td>149.0</td>
+              <td>1.82e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AGE37171.1</td>
+              <td>cyclodehydratase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001174/1">BGC0001174</a></td>
+              <td>RiPP:LAP</td>
+              <td>29.0</td>
+              <td>101.4</td>
+              <td>145.0</td>
+              <td>2.44e-38</td>
+          </tr>
+    
+          <tr>
+              <td>CBJ61638.1</td>
+              <td>PtnC_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000569/1">BGC0000569</a></td>
+              <td>RiPP:LAP</td>
+              <td>27.0</td>
+              <td>89.2</td>
+              <td>135.0</td>
+              <td>4.95e-35</td>
+          </tr>
+    
+          <tr>
+              <td>EDW22903.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001173/1">BGC0001173</a></td>
+              <td>RiPP:LAP</td>
+              <td>28.0</td>
+              <td>89.2</td>
+              <td>135.0</td>
+              <td>8.12e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AFZ08005.1</td>
+              <td>Heterocyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000471/1">BGC0000471</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>29.0</td>
+              <td>90.4</td>
+              <td>122.0</td>
+              <td>1.53e-29</td>
+          </tr>
+    
+          <tr>
+              <td>CCH92967.1</td>
+              <td>Heterocyclase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000483/1">BGC0000483</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>29.0</td>
+              <td>90.1</td>
+              <td>115.0</td>
+              <td>2.33e-27</td>
+          </tr>
+    
+          <tr>
+              <td>EKF00813.1</td>
+              <td>putative_adenylation/heterocyclization_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002486/1">BGC0002486</a></td>
+              <td>RiPP</td>
+              <td>28.0</td>
+              <td>102.3</td>
+              <td>111.0</td>
+              <td>7.97e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ACA04490.1</td>
+              <td>TruD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000477/1">BGC0000477</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>29.0</td>
+              <td>91.1</td>
+              <td>110.0</td>
+              <td>1.07e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AAY21153.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000475/1">BGC0000475</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>28.0</td>
+              <td>96.3</td>
+              <td>107.0</td>
+              <td>1.12e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CAA09633.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000227/1">BGC0000227</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>30.0</td>
+              <td>104.4</td>
+              <td>102.0</td>
+              <td>4.86e-23</td>
+          </tr>
+    
+          <tr>
+              <td>ACA04483.1</td>
+              <td>TenD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000480/1">BGC0000480</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>28.0</td>
+              <td>89.4</td>
+              <td>101.0</td>
+              <td>1.19e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AGI92080.1</td>
+              <td>YcaO-domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002115/1">BGC0002115</a></td>
+              <td>RiPP:Other</td>
+              <td>30.0</td>
+              <td>107.6</td>
+              <td>98.0</td>
+              <td>9.83e-22</td>
+          </tr>
+    
+          <tr>
+              <td>BAE46919.2</td>
+              <td>goadsporin_biosynthetic_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000565/1">BGC0000565</a></td>
+              <td>RiPP:LAP</td>
+              <td>27.0</td>
+              <td>93.6</td>
+              <td>96.0</td>
+              <td>6.9e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CAO82084.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000473/1">BGC0000473</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>26.0</td>
+              <td>91.3</td>
+              <td>94.0</td>
+              <td>3.95e-20</td>
+          </tr>
+    
+          <tr>
+              <td>CAP64338.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000474/1">BGC0000474</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>26.0</td>
+              <td>91.3</td>
+              <td>92.0</td>
+              <td>2.23e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QGA72600.1</td>
+              <td>MusD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002551/1">BGC0002551</a></td>
+              <td>Alkaloid+RiPP+Terpene</td>
+              <td>27.0</td>
+              <td>89.0</td>
+              <td>91.0</td>
+              <td>3.99e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QGA72585.1</td>
+              <td>MusD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002485/1">BGC0002485</a></td>
+              <td>RiPP+Alkaloid</td>
+              <td>27.0</td>
+              <td>90.8</td>
+              <td>91.0</td>
+              <td>5.33e-19</td>
+          </tr>
+    
+          <tr>
+              <td>AAF73450.1</td>
+              <td>AknN</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000193/1">BGC0000193</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>71.8</td>
+              <td>89.0</td>
+              <td>1.5e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ZP_00672901.1</td>
+              <td>Protein_of_unknown_function_DUF181</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000481/1">BGC0000481</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>26.0</td>
+              <td>100.7</td>
+              <td>89.0</td>
+              <td>1.67e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_3</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001849/1">BGC0001849</a></td>
+              <td>RiPP</td>
+              <td>30.0</td>
+              <td>83.7</td>
+              <td>87.0</td>
+              <td>4.99e-18</td>
+          </tr>
+    
+          <tr>
+              <td>WP_159042661.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002013/1">BGC0002013</a></td>
+              <td>RiPP</td>
+              <td>27.0</td>
+              <td>92.9</td>
+              <td>71.0</td>
+              <td>5.55e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BAN83923.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000625/1">BGC0000625</a></td>
+              <td>RiPP</td>
+              <td>26.0</td>
+              <td>94.0</td>
+              <td>65.0</td>
+              <td>6.8e-11</td>
+          </tr>
+    
+          <tr>
+              <td>PYC67537.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001473/1">BGC0001473</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>29.0</td>
+              <td>53.9</td>
+              <td>64.0</td>
+              <td>1.41e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ00798.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001802/1">BGC0001802</a></td>
+              <td>RiPP</td>
+              <td>27.0</td>
+              <td>82.3</td>
+              <td>61.0</td>
+              <td>1.53e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BBC15204.1</td>
+              <td>YcaO-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001696/1">BGC0001696</a></td>
+              <td>RiPP</td>
+              <td>26.0</td>
+              <td>91.5</td>
+              <td>60.0</td>
+              <td>2.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091614389.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001471/1">BGC0001471</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>32.0</td>
+              <td>55.0</td>
+              <td>58.0</td>
+              <td>7.36e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030193566.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002669/1">BGC0002669</a></td>
+              <td>RiPP</td>
+              <td>25.0</td>
+              <td>91.5</td>
+              <td>55.0</td>
+              <td>1.06e-07</td>
+          </tr>
+    
+          <tr>
+              <td>PYC80225.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001474/1">BGC0001474</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>28.0</td>
+              <td>58.5</td>
+              <td>52.0</td>
+              <td>5.22e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AFU90402.1</td>
+              <td>YcaO_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000470/1">BGC0000470</a></td>
+              <td>RiPP:Bottromycin</td>
+              <td>25.0</td>
+              <td>61.0</td>
+              <td>49.0</td>
+              <td>7.14e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

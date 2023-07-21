@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AOE23565.1</td>
+              <td>FoxOI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001598/1">BGC0001598</a></td>
+              <td>NRP+Polyketide</td>
+              <td>33.0</td>
+              <td>77.9</td>
+              <td>94.0</td>
+              <td>8.97e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AEE65502.1</td>
+              <td>geranylgeranyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>32.0</td>
+              <td>77.6</td>
+              <td>88.0</td>
+              <td>6.19e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf39</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001013/1">BGC0001013</a></td>
+              <td>NRP+Polyketide</td>
+              <td>29.0</td>
+              <td>55.7</td>
+              <td>66.0</td>
+              <td>3.32e-11</td>
+          </tr>
+    
+          <tr>
+              <td>CAE17550.1</td>
+              <td>oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000210/1">BGC0000210</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Oligosaccharide</td>
+              <td>28.0</td>
+              <td>76.8</td>
+              <td>56.0</td>
+              <td>4.27e-08</td>
+          </tr>
+    
+          <tr>
+              <td>MUL41485.1</td>
+              <td>NAD(P)/FAD-dependent_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002045/1">BGC0002045</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>24.0</td>
+              <td>96.9</td>
+              <td>54.0</td>
+              <td>1.08e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ADU85999.1</td>
+              <td>putative_tryptophan_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000165/1">BGC0000165</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>26.0</td>
+              <td>93.9</td>
+              <td>52.0</td>
+              <td>8.85e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ACU71639.1</td>
+              <td>tryptophan_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001154/1">BGC0001154</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>40.5</td>
+              <td>51.0</td>
+              <td>1.19e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AEU17894.1</td>
+              <td>putative_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001072/1">BGC0001072</a></td>
+              <td>Saccharide+Polyketide:Modular type I polyketide+Polyketide:Type II polyketide+Other:Aminocoumarin</td>
+              <td>32.0</td>
+              <td>40.2</td>
+              <td>50.0</td>
+              <td>2.71e-06</td>
+          </tr>
+    
+          <tr>
+              <td>QLD23480.1</td>
+              <td>Halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002085/1">BGC0002085</a></td>
+              <td>Saccharide:Oligosaccharide</td>
+              <td>31.0</td>
+              <td>41.5</td>
+              <td>49.0</td>
+              <td>8.28e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>PVC99878.1</td>
+              <td>cold-shock_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002100/1">BGC0002100</a></td>
+              <td>NRP+Other</td>
+              <td>55.0</td>
+              <td>85.3</td>
+              <td>74.0</td>
+              <td>3.69e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ACG60738.1</td>
+              <td>putative_cold_shock_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001058/1">BGC0001058</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>52.0</td>
+              <td>85.3</td>
+              <td>68.0</td>
+              <td>5.01e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QLH55590.1</td>
+              <td>cold-shock_protein_CspC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002043/1">BGC0002043</a></td>
+              <td>RiPP</td>
+              <td>53.0</td>
+              <td>85.3</td>
+              <td>68.0</td>
+              <td>7.12e-17</td>
+          </tr>
+    
+          <tr>
+              <td>SCN11962.1</td>
+              <td>cold-shock_DNA-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001580/1">BGC0001580</a></td>
+              <td>Polyketide</td>
+              <td>50.0</td>
+              <td>82.4</td>
+              <td>62.0</td>
+              <td>1.47e-14</td>
+          </tr>
+    
+          <tr>
+              <td>QBF51771.1</td>
+              <td>cold-shock_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001856/1">BGC0001856</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>43.0</td>
+              <td>108.8</td>
+              <td>49.0</td>
+              <td>1.33e-08</td>
+          </tr>
+    
+          <tr>
+              <td>TXD00017.1</td>
+              <td>cold_shock_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001877/1">BGC0001877</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>108.8</td>
+              <td>47.0</td>
+              <td>3.63e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AKA59108.1</td>
+              <td>DNA-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001619/1">BGC0001619</a></td>
+              <td>Polyketide</td>
+              <td>46.0</td>
+              <td>73.5</td>
+              <td>47.0</td>
+              <td>3.68e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ADI58623.1</td>
+              <td>Transcriptional_regulation</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000187/1">BGC0000187</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>44.0</td>
+              <td>89.7</td>
+              <td>46.0</td>
+              <td>9.6e-08</td>
+          </tr>
+    
+          <tr>
+              <td>QBL56179.1</td>
+              <td>cold-shock_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002376/1">BGC0002376</a></td>
+              <td>Polyketide</td>
+              <td>41.0</td>
+              <td>85.3</td>
+              <td>45.0</td>
+              <td>2.05e-07</td>
+          </tr>
+    
+          <tr>
+              <td>BCK51656.1</td>
+              <td>DNA-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002520/1">BGC0002520</a></td>
+              <td>Polyketide</td>
+              <td>41.0</td>
+              <td>79.4</td>
+              <td>42.0</td>
+              <td>5.77e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

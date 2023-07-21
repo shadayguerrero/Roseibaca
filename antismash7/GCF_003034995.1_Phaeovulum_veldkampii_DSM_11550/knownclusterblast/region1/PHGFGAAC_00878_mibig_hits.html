@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAD05464.1</td>
+              <td>putative_glycosyl_transferase_WbiE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000782/1">BGC0000782</a></td>
+              <td>Saccharide</td>
+              <td>31.0</td>
+              <td>62.7</td>
+              <td>67.0</td>
+              <td>4.53e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AAK27401.1</td>
+              <td>putative_glycosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000785/1">BGC0000785</a></td>
+              <td>Saccharide</td>
+              <td>31.0</td>
+              <td>62.7</td>
+              <td>67.0</td>
+              <td>4.53e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AMP46605.1</td>
+              <td>putative_glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001387/1">BGC0001387</a></td>
+              <td>Other</td>
+              <td>39.0</td>
+              <td>30.2</td>
+              <td>57.0</td>
+              <td>5.23e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BAF47018.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000730/1">BGC0000730</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>31.5</td>
+              <td>50.0</td>
+              <td>1.29e-06</td>
+          </tr>
+    
+          <tr>
+              <td>BAF47033.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000731/1">BGC0000731</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>31.5</td>
+              <td>50.0</td>
+              <td>1.29e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAE14773.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002020/1">BGC0002020</a></td>
+              <td>Saccharide+NRP</td>
+              <td>30.0</td>
+              <td>33.2</td>
+              <td>49.0</td>
+              <td>1.5e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

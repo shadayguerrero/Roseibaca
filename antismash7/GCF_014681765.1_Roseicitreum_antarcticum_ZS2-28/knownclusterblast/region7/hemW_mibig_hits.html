@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABL74954.1</td>
+              <td>SAM-dependent_oxidase_or_methyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001048/1">BGC0001048</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>28.0</td>
+              <td>73.4</td>
+              <td>108.0</td>
+              <td>7.53e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ACG60749.1</td>
+              <td>SAM-dependent_oxidase_or_methyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001058/1">BGC0001058</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>26.0</td>
+              <td>71.1</td>
+              <td>89.0</td>
+              <td>3.37e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ARK19493.1</td>
+              <td>radical_SAM_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001540/1">BGC0001540</a></td>
+              <td>Other</td>
+              <td>22.0</td>
+              <td>96.1</td>
+              <td>87.0</td>
+              <td>2.39e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QLM04713.1</td>
+              <td>8-AzgG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002508/1">BGC0002508</a></td>
+              <td>Alkaloid</td>
+              <td>28.0</td>
+              <td>55.5</td>
+              <td>82.0</td>
+              <td>8.38e-17</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

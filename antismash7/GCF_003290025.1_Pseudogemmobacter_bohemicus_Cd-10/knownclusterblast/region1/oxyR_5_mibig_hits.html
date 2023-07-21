@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AXI91536.1</td>
+              <td>FunR2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001944/1">BGC0001944</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>62.2</td>
+              <td>107.0</td>
+              <td>8.98e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ABX02685.1</td>
+              <td>transcriptional_regulator,_LysR_family</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001521/1">BGC0001521</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>88.8</td>
+              <td>97.0</td>
+              <td>6.25e-23</td>
+          </tr>
+    
+          <tr>
+              <td>UPA71927.1</td>
+              <td>HTH-type_transcriptional_regulator_GltC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002636/1">BGC0002636</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>102.9</td>
+              <td>93.0</td>
+              <td>1.71e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CRI73788.1</td>
+              <td>LysR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001215/1">BGC0001215</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>91.3</td>
+              <td>84.0</td>
+              <td>4.55e-18</td>
+          </tr>
+    
+          <tr>
+              <td>MUL41458.1</td>
+              <td>LysR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002045/1">BGC0002045</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>31.0</td>
+              <td>78.5</td>
+              <td>81.0</td>
+              <td>5.15e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AZF85916.1</td>
+              <td>LysR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001963/1">BGC0001963</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>82.7</td>
+              <td>70.0</td>
+              <td>2.26e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AAG23282.1</td>
+              <td>probable_lysR-type_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000148/1">BGC0000148</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>61.2</td>
+              <td>69.0</td>
+              <td>3.33e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AJQ95673.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002046/1">BGC0002046</a></td>
+              <td>NRP+Polyketide:Trans-AT type I polyketide</td>
+              <td>22.0</td>
+              <td>77.2</td>
+              <td>59.0</td>
+              <td>9.5e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AID65227.1</td>
+              <td>LysR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000335/1">BGC0000335</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>100.3</td>
+              <td>56.0</td>
+              <td>2.16e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAK15816.1</td>
+              <td>putative_transcriptional_regulator,_LysR_family</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000344/1">BGC0000344</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>76.9</td>
+              <td>52.0</td>
+              <td>3.46e-07</td>
+          </tr>
+    
+          <tr>
+              <td>BCJ07568.1</td>
+              <td>transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002379/1">BGC0002379</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>77.6</td>
+              <td>51.0</td>
+              <td>4.63e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AEG64682.1</td>
+              <td>LysR-type_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000379/1">BGC0000379</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>56.7</td>
+              <td>50.0</td>
+              <td>8.72e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

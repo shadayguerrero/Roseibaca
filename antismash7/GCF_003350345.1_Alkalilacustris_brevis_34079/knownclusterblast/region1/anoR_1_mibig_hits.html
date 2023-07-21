@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAK28504.1</td>
+              <td>MupR</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000182/1">BGC0000182</a></td>
+              <td>Polyketide:Iterative type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>28.0</td>
+              <td>80.3</td>
+              <td>73.0</td>
+              <td>2.57e-15</td>
+          </tr>
+    
+          <tr>
+              <td>BAC41336.1</td>
+              <td>transcription_regulator_like_protein_EpsA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000761/1">BGC0000761</a></td>
+              <td>Saccharide</td>
+              <td>47.0</td>
+              <td>24.5</td>
+              <td>52.0</td>
+              <td>1.08e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AOT85886.1</td>
+              <td>response_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001787/1">BGC0001787</a></td>
+              <td>RiPP</td>
+              <td>40.0</td>
+              <td>27.9</td>
+              <td>49.0</td>
+              <td>1.03e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CCC55908.1</td>
+              <td>LuxR_family_transcriptional_regulator</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000973/1">BGC0000973</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>39.0</td>
+              <td>27.5</td>
+              <td>48.0</td>
+              <td>1.35e-06</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ10692.1</td>
+              <td>hypothetical_bacteriocin_immunity_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000561/1">BGC0000561</a></td>
+              <td>RiPP:Lanthipeptide</td>
+              <td>39.0</td>
+              <td>25.3</td>
+              <td>46.0</td>
+              <td>2.08e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ACA51941.1</td>
+              <td>BovR</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000498/1">BGC0000498</a></td>
+              <td>RiPP:Lanthipeptide</td>
+              <td>39.0</td>
+              <td>25.3</td>
+              <td>46.0</td>
+              <td>6.42e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

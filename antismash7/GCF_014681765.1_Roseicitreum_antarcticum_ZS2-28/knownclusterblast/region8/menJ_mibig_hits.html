@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AEE65502.1</td>
+              <td>geranylgeranyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>33.0</td>
+              <td>78.6</td>
+              <td>125.0</td>
+              <td>4.42e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AOE23565.1</td>
+              <td>FoxOI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001598/1">BGC0001598</a></td>
+              <td>NRP+Polyketide</td>
+              <td>34.0</td>
+              <td>81.2</td>
+              <td>121.0</td>
+              <td>1.43e-30</td>
+          </tr>
+    
+          <tr>
+              <td>PVC99887.1</td>
+              <td>geranylgeranyl_reductase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002100/1">BGC0002100</a></td>
+              <td>NRP+Other</td>
+              <td>32.0</td>
+              <td>84.3</td>
+              <td>108.0</td>
+              <td>8.27e-26</td>
+          </tr>
+    
+          <tr>
+              <td>BAG17299.1</td>
+              <td>monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000282/1">BGC0000282</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>79.4</td>
+              <td>72.0</td>
+              <td>9.64e-14</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62867.1</td>
+              <td>tryptophan_7-halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002373/1">BGC0002373</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>83.5</td>
+              <td>68.0</td>
+              <td>5.08e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BBE36474.1</td>
+              <td>tryptophan_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001922/1">BGC0001922</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>82.2</td>
+              <td>66.0</td>
+              <td>2.6e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AYM52862.1</td>
+              <td>monooxygenase_FAD-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001964/1">BGC0001964</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>77.8</td>
+              <td>64.0</td>
+              <td>5.25e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AHA34035.1</td>
+              <td>Bmp2,_Flavin-dependent_pyrroly-S-ACP_brominase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000890/1">BGC0000890</a></td>
+              <td>Other:Aminocoumarin</td>
+              <td>23.0</td>
+              <td>85.8</td>
+              <td>50.0</td>
+              <td>3.11e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AME30285.1</td>
+              <td>pyrrole_halogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001463/1">BGC0001463</a></td>
+              <td>Other</td>
+              <td>23.0</td>
+              <td>104.9</td>
+              <td>49.0</td>
+              <td>4.13e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ75108.1</td>
+              <td>Bmp2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001464/1">BGC0001464</a></td>
+              <td>Other</td>
+              <td>23.0</td>
+              <td>102.8</td>
+              <td>49.0</td>
+              <td>4.13e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ESP90845.1</td>
+              <td>Dehydrogenases_(flavoprotein)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000891/1">BGC0000891</a></td>
+              <td>Other:Aminocoumarin</td>
+              <td>23.0</td>
+              <td>103.6</td>
+              <td>48.0</td>
+              <td>9.66e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

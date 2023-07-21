@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAI63278.1</td>
+              <td>putative_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000434/1">BGC0000434</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>96.9</td>
+              <td>150.0</td>
+              <td>3.47e-41</td>
+          </tr>
+    
+          <tr>
+              <td>AAW03321.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000982/1">BGC0000982</a></td>
+              <td>NRP+Polyketide</td>
+              <td>25.0</td>
+              <td>55.4</td>
+              <td>72.0</td>
+              <td>1.83e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AZQ75154.1</td>
+              <td>aminotransferase_class_I/II-fold_pyridoxal_phosphate-dependent_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001896/1">BGC0001896</a></td>
+              <td>Other</td>
+              <td>28.0</td>
+              <td>66.4</td>
+              <td>66.0</td>
+              <td>1.04e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ALV86873.1</td>
+              <td>Tlo27</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001406/1">BGC0001406</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>41.3</td>
+              <td>56.0</td>
+              <td>3.53e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AVL27082.1</td>
+              <td>PLP-dependent_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001485/1">BGC0001485</a></td>
+              <td>Alkaloid</td>
+              <td>29.0</td>
+              <td>34.6</td>
+              <td>53.0</td>
+              <td>2.92e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AFV52119.1</td>
+              <td>phenylalanine_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000081/1">BGC0000081</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide+Polyketide:Enediyne type I polyketide</td>
+              <td>28.0</td>
+              <td>42.3</td>
+              <td>53.0</td>
+              <td>2.99e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AEF33083.1</td>
+              <td>putative_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001039/1">BGC0001039</a></td>
+              <td>NRP+Polyketide</td>
+              <td>26.0</td>
+              <td>44.1</td>
+              <td>52.0</td>
+              <td>5.31e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

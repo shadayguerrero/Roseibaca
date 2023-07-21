@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADA71974.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000860/1">BGC0000860</a></td>
+              <td>Other</td>
+              <td>61.0</td>
+              <td>85.6</td>
+              <td>210.0</td>
+              <td>6.14e-70</td>
+          </tr>
+    
+          <tr>
+              <td>ABY40739.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000856/1">BGC0000856</a></td>
+              <td>Other</td>
+              <td>47.0</td>
+              <td>87.2</td>
+              <td>164.0</td>
+              <td>6.91e-52</td>
+          </tr>
+    
+          <tr>
+              <td>ABY40744.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000857/1">BGC0000857</a></td>
+              <td>Other</td>
+              <td>46.0</td>
+              <td>85.6</td>
+              <td>146.0</td>
+              <td>6.99e-45</td>
+          </tr>
+    
+          <tr>
+              <td>ABB30170.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000855/1">BGC0000855</a></td>
+              <td>Other</td>
+              <td>50.0</td>
+              <td>80.6</td>
+              <td>145.0</td>
+              <td>2.21e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AAY96770.1</td>
+              <td>L-2,4-diaminobutyrat_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000854/1">BGC0000854</a></td>
+              <td>Other</td>
+              <td>44.0</td>
+              <td>85.6</td>
+              <td>139.0</td>
+              <td>5.2e-42</td>
+          </tr>
+    
+          <tr>
+              <td>ACB30330.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000859/1">BGC0000859</a></td>
+              <td>Other</td>
+              <td>42.0</td>
+              <td>88.9</td>
+              <td>137.0</td>
+              <td>4.19e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ACB30326.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000858/1">BGC0000858</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>81.1</td>
+              <td>114.0</td>
+              <td>1.6e-32</td>
+          </tr>
+    
+          <tr>
+              <td>QOE83930.1</td>
+              <td>L-2,4-diaminobutyric_acid_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002052/1">BGC0002052</a></td>
+              <td>Other:Ectoine</td>
+              <td>41.0</td>
+              <td>75.0</td>
+              <td>90.0</td>
+              <td>1.26e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AAS02094.1</td>
+              <td>ThpA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000853/1">BGC0000853</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>81.1</td>
+              <td>86.0</td>
+              <td>3.97e-21</td>
+          </tr>
+    
+          <tr>
+              <td>WP_161631300.1</td>
+              <td>GNAT_family_N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002698/1">BGC0002698</a></td>
+              <td>RiPP</td>
+              <td>37.0</td>
+              <td>38.9</td>
+              <td>46.0</td>
+              <td>7.27e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

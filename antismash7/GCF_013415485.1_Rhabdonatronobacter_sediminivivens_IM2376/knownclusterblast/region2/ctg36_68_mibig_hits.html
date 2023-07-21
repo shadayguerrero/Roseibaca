@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAH10106.1</td>
+              <td>putative_transketolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000268/1">BGC0000268</a></td>
+              <td>Polyketide</td>
+              <td>49.0</td>
+              <td>101.2</td>
+              <td>533.0</td>
+              <td>1.12e-181</td>
+          </tr>
+    
+          <tr>
+              <td>QJS40204.1</td>
+              <td>Transketolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002439/1">BGC0002439</a></td>
+              <td>Other</td>
+              <td>47.0</td>
+              <td>101.6</td>
+              <td>525.0</td>
+              <td>1.3e-178</td>
+          </tr>
+    
+          <tr>
+              <td>ARF06215.1</td>
+              <td>transketolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001593/1">BGC0001593</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>39.1</td>
+              <td>122.0</td>
+              <td>1.17e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AHB62775.1</td>
+              <td>1-deoxy-D-xylulose-5-phosphate_synthase_(DXS)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001126/1">BGC0001126</a></td>
+              <td>Terpene+Alkaloid</td>
+              <td>25.0</td>
+              <td>85.3</td>
+              <td>59.0</td>
+              <td>1.71e-08</td>
+          </tr>
+    
+          <tr>
+              <td>APB62261.1</td>
+              <td>1-deoxy-D-xylulose-5-phosphate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001612/1">BGC0001612</a></td>
+              <td>Alkaloid</td>
+              <td>25.0</td>
+              <td>85.3</td>
+              <td>59.0</td>
+              <td>1.71e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AHI58837.1</td>
+              <td>1-deoxy-D-xylulose-5-phosphate_synthase_(DXS)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000668/1">BGC0000668</a></td>
+              <td>Terpene+Alkaloid</td>
+              <td>24.0</td>
+              <td>85.0</td>
+              <td>58.0</td>
+              <td>2.25e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ATN39902.1</td>
+              <td>MstH</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001664/1">BGC0001664</a></td>
+              <td>Terpene</td>
+              <td>24.0</td>
+              <td>84.5</td>
+              <td>58.0</td>
+              <td>2.26e-08</td>
+          </tr>
+    
+          <tr>
+              <td>APZ79598.1</td>
+              <td>FilE4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001501/1">BGC0001501</a></td>
+              <td>Alkaloid</td>
+              <td>25.0</td>
+              <td>85.3</td>
+              <td>57.0</td>
+              <td>5.15e-08</td>
+          </tr>
+    
+          <tr>
+              <td>APZ79565.1</td>
+              <td>FimE4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001594/1">BGC0001594</a></td>
+              <td>Alkaloid</td>
+              <td>25.0</td>
+              <td>85.3</td>
+              <td>57.0</td>
+              <td>5.15e-08</td>
+          </tr>
+    
+          <tr>
+              <td>APZ79619.1</td>
+              <td>FisE4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001595/1">BGC0001595</a></td>
+              <td>Alkaloid</td>
+              <td>24.0</td>
+              <td>84.7</td>
+              <td>57.0</td>
+              <td>6.79e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

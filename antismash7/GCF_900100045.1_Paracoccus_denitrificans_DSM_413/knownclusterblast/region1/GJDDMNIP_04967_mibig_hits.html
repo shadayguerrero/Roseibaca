@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ANA09433.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001483/1">BGC0001483</a></td>
+              <td>Other</td>
+              <td>42.0</td>
+              <td>83.6</td>
+              <td>248.0</td>
+              <td>1.21e-77</td>
+          </tr>
+    
+          <tr>
+              <td>CCP43387.1</td>
+              <td>Methoxy_mycolic_acid_synthase_2_MmaA2_(methyl_mycolic_acid_synthase_2)_(MMA2)_(hydroxy_mycolic_acid_synthase)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000870/1">BGC0000870</a></td>
+              <td>Other</td>
+              <td>37.0</td>
+              <td>67.9</td>
+              <td>179.0</td>
+              <td>4.77e-53</td>
+          </tr>
+    
+          <tr>
+              <td>CCP43386.1</td>
+              <td>Methoxy_mycolic_acid_synthase_3_MmaA3_(methyl_mycolic_acid_synthase_3)_(MMA3)_(hydroxy_mycolic_acid_synthase)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000870/1">BGC0000870</a></td>
+              <td>Other</td>
+              <td>36.0</td>
+              <td>67.6</td>
+              <td>177.0</td>
+              <td>4.32e-52</td>
+          </tr>
+    
+          <tr>
+              <td>QWM97311.1</td>
+              <td>class_I_SAM-dependent_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002384/1">BGC0002384</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>81.4</td>
+              <td>167.0</td>
+              <td>3.69e-47</td>
+          </tr>
+    
+          <tr>
+              <td>CCP43385.1</td>
+              <td>Methoxy_mycolic_acid_synthase_4_MmaA4_(methyl_mycolic_acid_synthase_4)_(MMA4)_(hydroxy_mycolic_acid_synthase)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000870/1">BGC0000870</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>69.8</td>
+              <td>159.0</td>
+              <td>2.13e-45</td>
+          </tr>
+    
+          <tr>
+              <td>CCP43388.1</td>
+              <td>Methoxy_mycolic_acid_synthase_1_MmaA1_(methyl_mycolic_acid_synthase_1)_(MMA1)_(hydroxy_mycolic_acid_synthase)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000870/1">BGC0000870</a></td>
+              <td>Other</td>
+              <td>34.0</td>
+              <td>66.7</td>
+              <td>146.0</td>
+              <td>1.28e-40</td>
+          </tr>
+    
+          <tr>
+              <td>ADC45521.1</td>
+              <td>cyclopropane-fatty-acyl-phospholipid_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000093/1">BGC0000093</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>55.7</td>
+              <td>103.0</td>
+              <td>7.78e-25</td>
+          </tr>
+    
+          <tr>
+              <td>WP_026724084.1</td>
+              <td>cyclopropane-fatty-acyl-phospholipid_synthase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002624/1">BGC0002624</a></td>
+              <td>NRP+Polyketide</td>
+              <td>29.0</td>
+              <td>67.4</td>
+              <td>103.0</td>
+              <td>8.69e-25</td>
+          </tr>
+    
+          <tr>
+              <td>QWM97314.1</td>
+              <td>class_I_SAM-dependent_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002384/1">BGC0002384</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>45.0</td>
+              <td>92.0</td>
+              <td>2.61e-20</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

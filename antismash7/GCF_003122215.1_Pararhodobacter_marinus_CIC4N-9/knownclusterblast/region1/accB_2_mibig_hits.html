@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AQP25561.1</td>
+              <td>ACC_biotin_carboxy_carrier_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001590/1">BGC0001590</a></td>
+              <td>Polyketide</td>
+              <td>50.0</td>
+              <td>56.0</td>
+              <td>84.0</td>
+              <td>5.66e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ADE22307.1</td>
+              <td>biotin_carboxyl_carrier_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000279/1">BGC0000279</a></td>
+              <td>Polyketide</td>
+              <td>51.0</td>
+              <td>60.0</td>
+              <td>84.0</td>
+              <td>6.07e-21</td>
+          </tr>
+    
+          <tr>
+              <td>MUL41477.1</td>
+              <td>acetyl-CoA_carboxylase_biotin_carboxyl_carrier_protein_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002045/1">BGC0002045</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>50.0</td>
+              <td>56.0</td>
+              <td>82.0</td>
+              <td>2.67e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AXG22425.1</td>
+              <td>acetyl-CoA_carboxylase_biotin_carboxyl_carrier_protein_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002024/1">BGC0002024</a></td>
+              <td>Polyketide</td>
+              <td>51.0</td>
+              <td>50.0</td>
+              <td>78.0</td>
+              <td>1.6e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AAG30192.1</td>
+              <td>biotin_carboxylase_carrier_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000261/1">BGC0000261</a></td>
+              <td>Polyketide</td>
+              <td>50.0</td>
+              <td>50.7</td>
+              <td>74.0</td>
+              <td>2.29e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AFY23041.1</td>
+              <td>TamJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000274/1">BGC0000274</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>46.0</td>
+              <td>52.7</td>
+              <td>72.0</td>
+              <td>1.78e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ADQ55469.1</td>
+              <td>acetyl-CoA_carboxylase_biotin_carboxyl_carrier_protein_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000350/1">BGC0000350</a></td>
+              <td>NRP:Beta-lactam</td>
+              <td>27.0</td>
+              <td>99.3</td>
+              <td>64.0</td>
+              <td>2.61e-13</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACB30328.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000858/1">BGC0000858</a></td>
+              <td>Other</td>
+              <td>51.0</td>
+              <td>98.3</td>
+              <td>132.0</td>
+              <td>1.06e-40</td>
+          </tr>
+    
+          <tr>
+              <td>ADA71976.1</td>
+              <td>L-ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000860/1">BGC0000860</a></td>
+              <td>Other</td>
+              <td>50.0</td>
+              <td>96.7</td>
+              <td>130.0</td>
+              <td>7.71e-40</td>
+          </tr>
+    
+          <tr>
+              <td>QLQ36634.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002097/1">BGC0002097</a></td>
+              <td>NRP+Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>53.0</td>
+              <td>100.8</td>
+              <td>120.0</td>
+              <td>5.57e-36</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ52664.1</td>
+              <td>L-ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001073/1">BGC0001073</a></td>
+              <td>NRP+Polyketide</td>
+              <td>50.0</td>
+              <td>100.8</td>
+              <td>115.0</td>
+              <td>3.7e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AAK12085.1</td>
+              <td>EctC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000852/1">BGC0000852</a></td>
+              <td>Other</td>
+              <td>45.0</td>
+              <td>97.5</td>
+              <td>112.0</td>
+              <td>8.07e-33</td>
+          </tr>
+    
+          <tr>
+              <td>QEG98955.1</td>
+              <td>ant24</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002042/1">BGC0002042</a></td>
+              <td>NRP</td>
+              <td>42.0</td>
+              <td>96.7</td>
+              <td>99.0</td>
+              <td>1.78e-27</td>
+          </tr>
+    
+          <tr>
+              <td>KKZ73243.1</td>
+              <td>ectoine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001778/1">BGC0001778</a></td>
+              <td>Other</td>
+              <td>43.0</td>
+              <td>91.7</td>
+              <td>91.0</td>
+              <td>1.84e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>
