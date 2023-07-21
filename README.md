@@ -79,16 +79,16 @@ mv $id.prokka.gbk $id2.gbk
 done
 ~~~
 
-## [Biosynthetic Gene Cluster (BGC) Clustering](https://github.com/shadayguerrero/Roseibaca/tree/main/antismash) 
-We used **antiSMASH 6.0.0** to search for BGCs, and the results were stored in the [antismash](https://github.com/shadayguerrero/Roseibaca/tree/main/antismash) folder. Additionally, we used the [change-names.sh](/antismash/change-names.sh) script, which adds the strain details to each of the regions found by antiSMASH.
+## [Biosynthetic Gene Cluster (BGC) Clustering](https://github.com/shadayguerrero/Roseibaca/tree/main/antismash7) 
+We used **antiSMASH 7.0.0** to search for BGCs, and the results were stored in the [antismash7](https://github.com/shadayguerrero/Roseibaca/tree/main/antismash7) folder. Additionally, we used the [change-names.sh](/antismash/change-names.sh) script, which adds the strain details to each of the regions found by antiSMASH.
 
-We found 7 BGCs for *Roseibaca* V10, as can be seen in the output of [antismash](/antismash/GCF_023336755.1_Roseibaca_sp.V10_V10/index.html). The relationship of these clusters with other clusters in different genomes still needs to be investigated.
+We found 6 BGCs for *Roseibaca* V10, as can be seen in the output of [antismash](/antismash7/GCF_023336755.1_Roseibaca_sp.V10_V10/index.html). The relationship of these clusters with other clusters in different genomes still needs to be investigated.
 
 
-## [BGC Similarity Networks](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape)
-To identify the groups of BGCs that are forming and to determine in which groups Roseibaca sp.V10 is present, we used **BiG-SCAPE 1.1.2**. The results can be found in the [bigscpae/output](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape/output) folder.
+## [BGC Similarity Networks]https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos)
+To identify the groups of BGCs that are forming and to determine in which groups Roseibaca sp.V10 is present, we used **BiG-SCAPE 1.1.2**. The results can be found in the [bigscpae_nuevos/output_210723_4](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos/output_210723_4) folder.
 
-A graphical exploration of the **BiG-SCAPE** results can be seen at [bigscpae/output/index.html](/bigscape/output/index.html).
+A graphical exploration of the **BiG-SCAPE** results can be seen at [bigscpae_nuevos/output_210723_4/index.html](/bigscape_nuevos/output_210723_4/index.html).
 
 ### Terpene
 We have the following table showing the presence and absence of genomes containing the BGC that produces **Terpene**.
@@ -97,13 +97,13 @@ We have the following table showing the presence and absence of genomes containi
  
 In this table, we can observe the family **FAM_00127**, which includes our target genome *Roseibaca_sp.V10*. 
 
-FAM_00127
-1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.region001
-2. GCF_023336755.1_Roseibaca_sp.V10_V10-c00001_NZ_JALZ...region001
-3. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000012.region001
+FAM_00146
+1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.1.region001
+2. GCF_023336755.1_Roseibaca_sp.V10_V10-NZ_JALZWP010000001.1.region001
+3. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000012.1.region001
+4. GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43-NZ_JAFMPR010000008.1.region001
 
-
-<img src="svg/FAM_00127.svg" width="1200"/>
+<img src="svg/FAM_00146.svg" width="1200"/>
 
 
 ### RiPPs
@@ -113,12 +113,13 @@ We have the following table showing the presence and absence of genomes containi
  
  In this table, we can observe the family **FAM_00132**, which includes our target genome *Roseibaca_sp.V10*.
 
-FAM_00132
+
+FAM_00120
 1. GCF_023336755.1_Roseibaca_sp.V10_V10-c00009_NZ_JALZ...region001
 2. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000019.region001
 
 
-<img src="svg/FAM_00132.svg" width="1200"/>
+<img src="svg/FAM_00120.svg" width="1200"/>
 
 ### PKSother
 
@@ -128,11 +129,12 @@ We have the following table showing the presence and absence of genomes containi
 
 we can observe the family **FAM_00128**, which includes our target genome *Roseibaca_sp.V10*.
 
-FAM_00128
-1. GCF_023336755.1_Roseibaca_sp.V10_V10-c00002_NZ_JALZ...region001
-2. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000006.region001
 
-<img src="svg/FAM_00128.svg" width="1200"/>
+FAM_00117
+1. GCF_023336755.1_Roseibaca_sp.V10_V10-NZ_JALZWP010000002.1.region001
+2. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000006.1.region001
+
+<img src="svg/FAM_00117.svg" width="1200"/>
 
 ## [CORASON](https://github.com/shadayguerrero/Roseibaca/tree/main/corason/svg) 
 
