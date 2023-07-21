@@ -95,7 +95,7 @@ We have the following table showing the presence and absence of genomes containi
 
  <img src="svg/presence_terpene.png" width="1000"/>
  
-In this table, we can observe the family **FAM_00127**, which includes our target genome *Roseibaca_sp.V10*. 
+In this table, we can observe the family **FAM_00146**, which includes our target genome *Roseibaca_sp.V10*. 
 
 FAM_00146
 1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.1.region001
@@ -111,7 +111,7 @@ We have the following table showing the presence and absence of genomes containi
 
  <img src="svg/presence_RiPPs.png" width="1000"/>
  
- In this table, we can observe the family **FAM_00132**, which includes our target genome *Roseibaca_sp.V10*.
+ In this table, we can observe the family **FAM_00120**, which includes our target genome *Roseibaca_sp.V10*.
 
 
 FAM_00120
@@ -127,7 +127,7 @@ We have the following table showing the presence and absence of genomes containi
 
 <img src="svg/presence_PKSother.png" width="1000"/>
 
-we can observe the family **FAM_00128**, which includes our target genome *Roseibaca_sp.V10*.
+we can observe the family **FAM_00117**, which includes our target genome *Roseibaca_sp.V10*.
 
 
 FAM_00117
@@ -136,13 +136,54 @@ FAM_00117
 
 <img src="svg/FAM_00117.svg" width="1200"/>
 
-## [CORASON](https://github.com/shadayguerrero/Roseibaca/tree/main/corason/svg) 
+
+### PKS -NRP Hybrids
+
+We have the following table showing the presence and absence of genomes containing the BGC that produces Other.
+
+<img src="svg/presence_PKS-NRP.png" width="1000"/>
+
+we can observe the family **FAM_00135**, which includes our target genome *Roseibaca_sp.V10*.
+
+
+FAM_00135
+1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.1.region003
+2. GCF_023336755.1_Roseibaca_sp.V10_V10-NZ_JALZWP010000002.1.region002
+3. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000007.1.region001
+
+<img src="svg/FAM_00135.svg" width="1200"/>
+
+
+
+### Others
+
+We have the following table showing the presence and absence of genomes containing the BGC that produces Other.
+
+<img src="svg/presence_Others.png" width="1000"/>
+
+we can observe the family **FAM_00135**, which includes our target genome *Roseibaca_sp.V10*.
+
+
+FAM_00135
+1. GCF_001517585.1_Roseibaca_calidilacus_HL-91-NZ_FBYC01000004.1.region002
+2. GCF_023336755.1_Roseibaca_sp.V10_V10-NZ_JALZWP010000003.1.region001
+3. GCF_900499075.1_Roseibaca_ekhonensis_CECT_7235-NZ_UIHC01000001.1.region001
+4. GCF_020667835.1_Roseibaca_sp.Y0-43_Y0-43-NZ_JAFMPR010000001.1.region001
+
+<img src="svg/FAM_00119.svg" width="1200"/>
+
+
+
+
+
+
+## [CORASON](https://github.com/shadayguerrero/Roseibaca/tree/main/corason/svg/new) 
 
 CORASON (Clustering ORthologous proteins in Antibiotic Synthesis) is a tool specifically designed for the exploration and analysis of biosynthetic gene clusters. It allows the comparison of gene clusters across different genomes and facilitates the identification of conserved gene sets, which can provide insights into the functional and evolutionary relationships of these clusters.
 
 By using CORASON, we aimed to identify common core genes or gene neighborhoods shared between _Roseibaca sp.V10_ and other genomes, which could indicate potential similarities in the biosynthetic capabilities or pathways. This analysis would provide a broader context for understanding the functional characteristics of _Roseibaca_ sp.V10's biosynthetic potential.
 
-The output and results of the CORASON analysis can be found in the corresponding folder [corason/svg/](https://github.com/shadayguerrero/Roseibaca/tree/main/corason/svg) . The analysis may reveal clusters with similar core genes or shared gene neighborhoods, shedding light on the relationships and potential similarities between Roseibaca sp.V10 and other genomes in terms of biosynthetic capabilities.
+The output and results of the CORASON analysis can be found in the corresponding folder [corason/svg/new/](https://github.com/shadayguerrero/Roseibaca/tree/main/corason/svg/new) . The analysis may reveal clusters with similar core genes or shared gene neighborhoods, shedding light on the relationships and potential similarities between Roseibaca sp.V10 and other genomes in terms of biosynthetic capabilities.
 
 ### **Ectoine**
 
@@ -150,7 +191,7 @@ For ectoine, we used the gene  [BMJDCPAI_00849](/corason/query/ectoine_BMJDCPAI_
 
 The CORASON analysis with the gene BMJDCPAI_00849 as the query identified several clusters in different genomes that share similarity with the ectoine biosynthetic pathway. These clusters may contain genes involved in the synthesis of ectoine or related compounds.
 
-<img src="corason/svg/ectoine_BMJDCPAI_00849.query_Joined.svg " width="1000"/>
+<img src="corason/svg/new/ectoine_BMJDCPAI_00849_Joined.svg" width="1000"/>
 
 The analysis revealed the following clusters:
 
@@ -172,7 +213,7 @@ The analysis with [BMJDCPAI_02120](corason/query/ectoine_BMJDCPAI_02120.query) r
 
 Further details and a comprehensive analysis of the gene family can be found in the RRE output files.
 
-<img src="corason/svg/RRE_BMJDCPAI_02120.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/RRE_BMJDCPAI_02120_Joined.svg" width="1000"/>
 
 
 
@@ -181,7 +222,7 @@ Additionally, we performed an analysis using T3pks (Type III Polyketide Synthase
 
 Further examination of the T3pks gene family and its associated metabolic pathways can be explored in the output files generated from the analysis.
 
-<img src="corason/svg/t3pks_BMJDCPAI_00537.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/T3PKS_BMJDCPAI_00537_Joined.svg" width="1000"/>
 
 ### **Terpene**
 
@@ -189,15 +230,7 @@ In the Terpene analysis using the query gene  [BMJDCPAI_00103](corason/query/ter
 
 The presence of the Terpene biosynthetic gene in Roseibaca_ekhonensis suggests its capability to produce Terpene compounds. Further investigation into the specific Terpene biosynthetic pathways and the functional characteristics of the gene family can be explored using the output files generated from the analysis.
 
-<img src="corason/svg/terpene_BMJDCPAI_00103.query_Joined.svg" width="1000"/>
-
-### **RiPP**
-
-In the RiPP analysis using the query gene BMJDCPAI_01909 [BMJDCPAI_01909 ](corason/query/RiPP_BMJDCPAI_01909.query), we identified a gene family associated with RiPP biosynthesis. This gene family includes Roseibaca_ekhonensis, indicating its potential involvement in RiPP production.
-
-The presence of the RiPP biosynthetic gene in Roseibaca_ekhonensis suggests that this organism has the capability to produce RiPP compounds. Further exploration of the specific RiPP biosynthetic pathways and the functional characteristics of the gene family can be conducted using the output files generated from the analysis.
-
-<img src="corason/svg/RiPP_BMJDCPAI_01909.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/terpene_BMJDCPAI_00103_Joined.svg" width="1000"/>
 
 
 ### **NRPST1PKS**
@@ -206,7 +239,7 @@ In the analysis using the NRPST1PKS query gene [BMJDCPAI_00764 ](corason/query/N
 
 To investigate the presence of NRPST1PKS biosynthetic gene clusters in Roseibaca V10, we can perform a specific analysis using the corresponding gene sequence from Roseibaca V10 as the query. This analysis will provide more accurate information about the potential biosynthetic capabilities of Roseibaca V10 in producing nonribosomal peptides and type I polyketides.
 
-<img src="corason/svg/NRPST1PKS_BMJDCPAI_00764.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/NRPST1PKS_BMJDCPAI_00764_Joined.svg" width="1000"/>
 
 
 ### **T1PKS**
@@ -215,9 +248,9 @@ To investigate the presence of T1PKS biosynthetic gene clusters in Roseibaca V10
 
 We use this query [BMJDCPAI_03118](corason/query/t1pks_2.BMJDCPAI_03118.query)
 
-<img src="corason/svg/t1pks_2.BMJDCPAI_03118.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/t1pks_2.BMJDCPAI_03118_Joined.svg" width="1000"/>
 
 
 
 And other query [BMJDCPAI_03119](corason/query/t1pks_BMJDCPAI_03119)
-<img src="corason/svg/t1pks_BMJDCPAI_03119.query_Joined.svg" width="1000"/>
+<img src="corason/svg/new/t1pks_BMJDCPAI_03119_Joined.svg" width="1000"/>
