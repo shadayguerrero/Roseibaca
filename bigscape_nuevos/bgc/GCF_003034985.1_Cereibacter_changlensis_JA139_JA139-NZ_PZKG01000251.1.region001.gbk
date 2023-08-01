@@ -1,0 +1,225 @@
+LOCUS       NZ_PZKG01000251.1       3036 bp    DNA     linear   UNK 05-DEC-2022
+DEFINITION  Cereibacter changlensis strain JA139JA139.
+ACCESSION   NZ_PZKG01000251
+VERSION     NZ_PZKG01000251.1
+KEYWORDS    .
+SOURCE      Cereibacter changlensis
+  ORGANISM  Cereibacter changlensis JA139JA139..
+            .
+COMMENT     Annotated using prokka 1.14.6 from
+            https://github.com/tseemann/prokka.
+            ##antiSMASH-Data-START##
+            Version      :: 7.0.0
+            Run date     :: 2023-07-20 16:20:17
+            NOTE: This is a single region extracted from a larger record!
+            Orig. start  :: 0
+            Orig. end    :: 3036
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3036
+                     /mol_type="genomic DNA"
+                     /organism="Cereibacter changlensis"
+                     /strain="JA139JA139"
+     protocluster    1..3036
+                     /aStool="rule-based-clusters"
+                     /category="other"
+                     /contig_edge="True"
+                     /core_location="[847:1525]"
+                     /cutoff="20000"
+                     /detection_rule="Autoind_synth"
+                     /neighbourhood="10000"
+                     /product="hserlactone"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      848..1525
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="Autoind_synth"
+                     /neighbourhood="10000"
+                     /product="hserlactone"
+                     /protocluster_number="1"
+     cand_cluster    1..3036
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="Autoind_synth"
+                     /kind="single"
+                     /product="hserlactone"
+                     /protoclusters="1"
+                     /tool="antismash"
+     region          1..3036
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="hserlactone"
+                     /region_number="1"
+                     /rules="Autoind_synth"
+                     /tool="antismash"
+     gene            complement(128..451)
+                     /locus_tag="EOMLKCNM_04436"
+     CDS             complement(128..451)
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /locus_tag="EOMLKCNM_04436"
+                     /product="hypothetical protein"
+                     /transl_table=11
+                     /translation="MASIPATMKKFRKYVEEAGFLDISVTYADGDRRRDVVFTLTTRDP
+                     DDNKIFLYSTARPEPRRFTDVARLTSTLSEWGLQPLEVPVTSGTHRCHLAGACAAPRLA
+                     VVR"
+     misc_feature    499..513
+                     /note="TFBS match to ZuR, Zinc-responsive repressor,
+                     confidence: weak, score: 20.16"
+                     /tool="antismash"
+     gene            complement(848..1525)
+                     /locus_tag="EOMLKCNM_04437"
+     CDS             complement(848..1525)
+                     /codon_start=1
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     hserlactone: Autoind_synth"
+                     /gene_kind="biosynthetic"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /locus_tag="EOMLKCNM_04437"
+                     /product="hypothetical protein"
+                     /sec_met_domain="Autoind_synth (E-value: 1.4e-13, bitscore:
+                     38.8, seeds: 13, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MMRRCNKDRKGCGAMQVEVVEFGRVAARWDLVEAFLSHRREVFVD
+                     RLGWDLTLSEGYEYDQYDVVSVAIYVIAHDGGRILGGARLLRCNSSIGNGRTVYSYMIR
+                     DAWRGVIGIPKTVCWEPPTTSPNSWELTRLLTLDPSPRIVRGILHAVNDFLRSRHAKEC
+                     LFLGPPSFMRMARMFGYAPSAMGDLVENKDGRFIAFSCPVIDRRPHGAPQTGHTHRECL
+                     AIV"
+     PFAM_domain     complement(1262..1423)
+                     /aSDomain="Autoind_synth"
+                     /aSTool="clusterhmmer"
+                     /database="34.0"
+                     /db_xref="PF00765.19"
+                     /db_xref="GO:0016740"
+                     /description="Autoinducer synthase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_EOMLKCNM_04437_0001"
+                     /evalue="6.10E-10"
+                     /gene_ontologies="GO:0016740: transferase activity"
+                     /label="EOMLKCNM_04437"
+                     /locus_tag="EOMLKCNM_04437"
+                     /protein_end="88"
+                     /protein_start="34"
+                     /score="39.0"
+                     /tool="antismash"
+                     /translation="FLSHRREVFVDRLGWDLTLSEGYEYDQYDVVSVAIYVIAHDGGRI
+                     LGGARLLRC"
+     gene            1603..2259
+                     /locus_tag="EOMLKCNM_04438"
+     CDS             1603..2259
+                     /codon_start=1
+                     /gene_functions="regulatory (smcogs)
+                     SMCOG1197:autoinducer-binding transcriptional regulator,
+                     (Score: 77.8; E-value: 1.3e-23)"
+                     /gene_kind="regulatory"
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /locus_tag="EOMLKCNM_04438"
+                     /product="hypothetical protein"
+                     /transl_table=11
+                     /translation="MLKNIVPHHKEVAAKLSDIAPSGYTMALNVCYLTPQVQVTTYPEA
+                     WVKRYREMHFVSHDPVAIWSTVNSGSTRWSDLPLWAHTGLSELVITEGREYGLAYGASV
+                     ARRNDTCPTLRCVLFAARPDRELTDLEIDYLVDVLDQAMTGIGFNSGLSAVELETLRDL
+                     AAGLSHQQIAAIREISAQTVRKRIDRAKVVLGARNAMQAVGIAARLGLLDAPAML"
+     PFAM_domain     1705..1995
+                     /aSDomain="Autoind_bind"
+                     /aSTool="clusterhmmer"
+                     /database="34.0"
+                     /db_xref="PF03472.17"
+                     /description="Autoinducer binding domain"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_EOMLKCNM_04438_0002"
+                     /evalue="1.40E-13"
+                     /label="EOMLKCNM_04438"
+                     /locus_tag="EOMLKCNM_04438"
+                     /protein_end="131"
+                     /protein_start="34"
+                     /score="50.7"
+                     /tool="antismash"
+                     /translation="PQVQVTTYPEAWVKRYREMHFVSHDPVAIWSTVNSGSTRWSDLPL
+                     WAHTGLSELVITEGREYGLAYGASVARRNDTCPTLRCVLFAARPDRELTDLE"
+     PFAM_domain     2056..2217
+                     /aSDomain="GerE"
+                     /aSTool="clusterhmmer"
+                     /database="34.0"
+                     /db_xref="PF00196.21"
+                     /db_xref="GO:0006355"
+                     /description="Bacterial regulatory proteins, luxR family"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_EOMLKCNM_04438_0003"
+                     /evalue="9.70E-08"
+                     /gene_ontologies="GO:0006355: regulation of DNA-templated
+                     transcription"
+                     /label="EOMLKCNM_04438"
+                     /locus_tag="EOMLKCNM_04438"
+                     /protein_end="205"
+                     /protein_start="151"
+                     /score="31.6"
+                     /tool="antismash"
+                     /translation="LSAVELETLRDLAAGLSHQQIAAIREISAQTVRKRIDRAKVVLGA
+                     RNAMQAVGI"
+     gene            2619..2969
+                     /locus_tag="EOMLKCNM_04439"
+     CDS             2619..2969
+                     /codon_start=1
+                     /inference="ab initio prediction:Prodigal:002006"
+                     /locus_tag="EOMLKCNM_04439"
+                     /product="hypothetical protein"
+                     /transl_table=11
+                     /translation="MSVAPPKLMWEASLGKEMSVDGATLRFVALGNPDKSDDTVVGWYV
+                     LLSRPDGEAKILMKTFNYEPRLLKTFNGLRSLLRDHVPTWTSVTLPLVPQVRAPNDIWK
+                     ILDKMDSSTPQD"
+ORIGIN
+        1 attggacgct ggtcagcttg agataggtcg ccggctgcgc tggcagtcgg gaacgtttcg
+       61 aactctggcc tggagctacg tgtaagtcgc cgctcactgt gtgaacacaa cgggcgcggc
+      121 agggctctca tcggaccact gccaaccgag gggcagcgca ggcgcccgcc aggtgacacc
+      181 gatgcgtgcc cgacgtcacc ggcacttcca aaggctgcaa accccattca ctcaatgtgg
+      241 aagtcagccg cgccacatcc gtaaaccggc gaggttcggg gcgcgctgtg gaatagagga
+      301 agatcttgtt gtcgtcggga tcgcgtgtgg tcagggtgaa caccacgtcg cgacgccgat
+      361 caccatccgc ataggttacc gatatgtcga ggaaacctgc ctcttcgaca tactttctga
+      421 acttcttcat cgttgcgggg atcgacgcca cggtcgcact ccttcttctt cagcttgccg
+      481 ttctcggggt tcccgtcgtg aacgtcatgg tcagagcaga tagccaccat ggatcgtccg
+      541 ggaacttcgt tcttcatata acggcgcggc gctattttct gcttcatatc tcttttttgc
+      601 cccttaccgc agcaagacaa tttcctaaac tgccgcgaag ctatttgcgg acgtcccgca
+      661 gcctgcaccc aaaacatgcg gaagtccccg accggaggcg aagcaccgtt ccgcgccgca
+      721 cgctcacgag gggcggtggg gggccagccg ggtgaacggt aaacgtcagc gcctcgcggc
+      781 tgtcccgcaa ggaccgcggt cagcagtgca gcccaaaggg gtcggcgatc gggtcggggc
+      841 gccggcgtca tacaatcgcc aagcactcgc ggtgcgtgtg tccagtctga ggcgcgccgt
+      901 gaggacgacg gtcgatcacc gggcagctga acgcgataaa ccgcccatcc ttgttctcca
+      961 ccaggtcgcc catcgcggac ggcgcgtagc cgaacatcct cgccatccgc atgaaagatg
+     1021 ggggaccaag gaacaggcac tccttcgcat ggcgcgaccg gaggaaatcg ttcaccgcgt
+     1081 ggaggatgcc ccggacaatt cgcggggatg gatcaagcgt caaaagccgg gtcaattccc
+     1141 aagaattagg agaggtcgtc ggcggttccc aacagacagt tttaggaatg ccaattactc
+     1201 cacgccatgc atcacgaatc atatagctat ataccgtccg accattgcca atactgctat
+     1261 tgcaccgcaa tagacgagcg ccccctaaaa tcctcccgcc gtcatgcgca atgacgtata
+     1321 tggccaccga tacgacgtcg tactggtcat actcatatcc ctcgctgagc gtcagatccc
+     1381 agccgaggcg gtccacgaac acctctcgtc tgtggctgag gaaggcttca accaggtccc
+     1441 aacgcgccgc gacgcggcca aactcgacga cttctacttg catggctcca caacctttgc
+     1501 ggtccttatt gcatcgacgc atcatctttt acaatatcgg accgttggcg ttacggtttt
+     1561 ccgtaatttg gagatcatcc cctacctatg aggccgcata aggtgctgaa aaatatagtc
+     1621 ccgcatcaca aggaggtcgc cgccaagctc tcggatatcg cgccgtcagg ctatacgatg
+     1681 gccttgaatg tctgctacct aacgccgcag gtgcaggtca cgacttaccc cgaagcatgg
+     1741 gtgaaacggt accgcgagat gcacttcgtg tcgcatgatc cggtcgcgat ctggtcaacc
+     1801 gtaaactcgg gttctacgcg ctggagcgat ctgccgctct gggcgcacac agggctgagc
+     1861 gagcttgtga taacggaagg ccgtgaatac ggccttgcct acggcgcatc ggtggcgcgc
+     1921 aggaacgaca cctgcccgac gctgcgttgc gtcctctttg cggcgcgccc ggaccgtgag
+     1981 ttgaccgacc tcgagattga ctacttggtg gacgttctgg atcaggcgat gaccggcatc
+     2041 ggattcaact cgggtctatc ggcggttgag ttggagacgc ttcgggatct ggcggcgggc
+     2101 ctctcccatc agcagatcgc ggcgatccgg gagatctcgg ctcaaacggt gcgcaagagg
+     2161 atcgatcgcg ccaaggtggt gctcggcgcg cggaacgcaa tgcaggccgt cggcatcgct
+     2221 gcacggctgg gtctgcttga tgcacctgcc atgctctgac ttgaccgata gcagaactgg
+     2281 ggcggccaca actgcgctca caacagaacg cggtactgca gagatactgt gttaagatat
+     2341 taaaacgagt cgttcaggac tgggcggctg tgaagggttg aggcggaaga gaaccttacg
+     2401 gtctgcaaaa tcgacctgcc gacgtgcatt cctccctgct tcttggtgct tacgcgtccc
+     2461 gctgaggcat cgactcgact gtcttccgaa acgcggtcag aatctggtta cagggtttct
+     2521 gcgtcaaaag cactgcactc ctctggcgca tctgatagca gggtgcgcga cgcaaactca
+     2581 gttttgggcc aagcccacaa gaaaaggaag gttcatagat gtccgtagcc ccgccaaagc
+     2641 tcatgtggga agccagcctc gggaaagaga tgtcggtcga cggcgccacg ctgcggttcg
+     2701 tcgccttggg aaatccggac aagagcgatg acacggtggt ggggtggtac gttctgctgt
+     2761 cgcgcccgga tggcgaagcc aagatcctga tgaagacgtt caactatgag ccccgccttc
+     2821 tgaagacctt caacggcctt cgctcgcttc tccgcgacca tgtgcccaca tggacatccg
+     2881 taaccctacc acttgtgccg caggtccgcg cgcccaacga catctggaag atcctggaca
+     2941 agatggacag ctctacaccc caagactgag tcttgatacg ggccgaacta gacaatttgt
+     3001 agcttgttgc catctgtagc gttgctatga tggttg
+//
