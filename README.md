@@ -86,9 +86,9 @@ We found 6 BGCs for *Roseibaca* V10, as can be seen in the output of [antismash]
 
 
 ## [BGC Similarity Networks](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos)
-To identify the groups of BGCs that are forming and to determine in which groups Roseibaca sp.V10 is present, we used **BiG-SCAPE 1.1.2**. The results can be found in the [bigscpae_nuevos/output_210723_4](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos/output_210723_4) folder.
+To identify the groups of BGCs that are forming and to determine in which groups Roseibaca sp.V10 is present, we used **BiG-SCAPE 1.1.2**. The results can be found in the [bigscpae_nuevos/output_3107](https://github.com/shadayguerrero/Roseibaca/tree/main/bigscape_nuevos/output_3107) folder.
 
-A graphical exploration of the **BiG-SCAPE** results can be seen at [bigscpae_nuevos/output_210723_4/index.html](/bigscape_nuevos/output_210723_4/index.html).
+A graphical exploration of the **BiG-SCAPE** results can be seen at [bigscpae_nuevos/output_3107/index.html](/bigscape_nuevos/output_3107/index.html).
 
 ### Terpene
 We have the following table showing the presence and absence of genomes containing the BGC that produces **Terpene**.
