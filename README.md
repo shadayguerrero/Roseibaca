@@ -254,3 +254,9 @@ We use this query [BMJDCPAI_03118](corason/query/t1pks_2.BMJDCPAI_03118.query)
 
 And other query [BMJDCPAI_03119](corason/query/t1pks_BMJDCPAI_03119)
 <img src="corason/svg/new/t1pks_BMJDCPAI_03119_Joined.svg" width="1000"/>
+
+Regarding the T1PKS biosynthetic gene cluster (BGC), we conducted two CORASON runs to investigate its presence and conservation in the genomes of the study group. In the first CORASON run, we used BMJDCPAI_03118, a gene from the "core biosynthetic genes" of Roseibaca V10, as the query. The results showed that this gene appeared in several genomes within the study group, but with low identity percentages. This suggests that the T1PKS BGC may be present in multiple genomes, but the genes involved in the cluster are not highly conserved across these genomes.
+
+In the second CORASON run, we used BMJDCPAI_03119, a gene from the "additional biosynthetic genes" of Roseibaca V10, as the query. The results revealed a much smaller group of genomes containing this gene, indicating a more limited distribution within the study group. Moreover, the genes that make up the T1PKS BGC in these genomes showed very low identity percentages. This observation suggests that the T1PKS BGC is likely unique to Roseibaca V10, as it was only detected with significant similarity in this specific strain.
+
+Based on these findings, we can conclude that the T1PKS BGC is predominantly present in Roseibaca V10, and its distribution is limited within the study group. The low conservation of the genes within the T1PKS cluster across different genomes suggests that it may have undergone significant evolutionary changes or that it represents a strain-specific biosynthetic pathway in Roseibaca V10. Further investigation and functional analysis of the T1PKS BGC in Roseibaca V10 would provide valuable insights into its role in secondary metabolite production and its potential contribution to the strain's unique characteristics.
