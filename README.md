@@ -161,7 +161,7 @@ We have the following table showing the presence and absence of genomes containi
 
 <img src="svg/presence_Others.png" width="1000"/>
 
-we can observe the family **FAM_00135**, which includes our target genome *Roseibaca_sp.V10*.
+we can observe the family **FAM_00119**, which includes our target genome *Roseibaca_sp.V10*.
 
 
 FAM_00135
